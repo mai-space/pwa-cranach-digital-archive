@@ -5,7 +5,6 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
 
 ## Inhaltsverzeichnis
-* [GitHub](http://github.com)
 * [Projektdokumentation]()
 * [Termindokumentationen]()
   * [05/08/2019 Teambesprechung]()
@@ -24,9 +23,11 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 > Das Frontend Design basiert auf einem frühen Prototypen von @inf155 und dem Screendesign von @inf166.
 > Dieses wird jedoch im folgenden von @inf166 noch weiterentwickelt während @inf155 sich um das Backend und seine Funktionen kümmern wird.
 > All das geschieht ab jetzt in eigenen Branches welche @inf155 anlegen wird.
-> _Wichtige neue Funktionen sind:_
+
+_Wichtige neue Funktionen sind:_
 > * QR Code Scanner -> Der Scanner an sich
 > * zuletzt gesehen -> Zuletzt gescannte Bilder
 > * Galerie -> Das Archiv des CDA's
-> _Andere Änderungen_
+
+_Andere Änderungen:_
 > Unser GitHub Repo trägt nun den Namen CDAA -> Cranach Digital App Archive
