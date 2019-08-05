@@ -3,3 +3,8 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
+
+## Inhaltsverzeichnis
+* [GitHub](http://github.com)
+* Termin Dokumentation
+* Projekt Dokumentation
