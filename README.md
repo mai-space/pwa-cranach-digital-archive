@@ -8,10 +8,11 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 * Color Variables hinzugefügt
 * Icons patched
 * MockUps Added
-* 
+* index.html Styles
+* History.html Styles
 #### TODO
-* Gallery recent pics styles
-* Recent pics styles
+* Gallery styles
+* Settings styles
 * Active Icon Highlight
 * 
 ## License
