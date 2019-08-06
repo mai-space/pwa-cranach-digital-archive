@@ -48,6 +48,13 @@ body{
 	font-size: 44px;
 	line-height: 130%;
 }
+#content h2 a{
+	text-decoration: none;
+	color: var(--highlight);
+}
+#content h2 {
+	padding-bottom: 10px;
+}
 #content p {
 	padding-top: 10px;
 	font-size: 16px;
@@ -211,6 +218,15 @@ body{
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.sidebar {
+
+	}
+	.sidebar input[type=text]{
+
+	}
+	.sidebar button {
+		
+	}
 	.galleryRow {
 		position: relative;
 		overflow: hidden;
@@ -352,6 +368,42 @@ body{
 	.gallery {
 		display: flex;
 		flex-wrap: wrap;
+	}
+	.sidebar {
+		z-index: 10;
+		background-color: var(--dark);
+		width: 100%;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0px;
+		display: inline;
+	}
+	.sidebar input[type=text] {
+		float: left;
+		text-align: left;
+		width: 400px;
+		margin: 0;
+		padding: 14px;
+		background-color: var(--dark);
+		color: var(--light); 
+		border: none;
+		/* border-radius: 5px; */
+	}
+	.sidebar button{
+		float: right;
+		text-align: left;
+		width: 44px;
+		margin: 0;
+		padding: 14px;
+		background-color: var(--dark);
+		color: var(--light);
+		border: none; 
+		/* border-radius: 5px; */
+	}
+	.sidebar button:hover{
+		border: 1px solid var(--highlight); 
 	}
 	.galleryRow {
 		position: relative;
@@ -498,15 +550,48 @@ body{
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.sidebar {
+		z-index: 10;
+		background-color: var(--dark);
+		width: 100%;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0px;
+		display: inline;
+	}
+	.sidebar input[type=text] {
+		float: left;
+		text-align: left;
+		width: 200px;
+		margin: 0;
+		padding: 14px;
+		background-color: var(--dark);
+		color: var(--light); 
+		border: none;
+		/* border-radius: 5px; */
+	}
+	.sidebar button{
+		float: right;
+		text-align: left;
+		width: 44px;
+		margin: 0;
+		padding: 14px;
+		background-color: var(--dark);
+		color: var(--light);
+		border: none; 
+		/* border-radius: 5px; */
+	}
+	.sidebar button:hover{
+		border: 1px solid var(--highlight); 
+	}
 	.galleryRow {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
 		cursor: pointer;
 	}
-	/* .galleryRow:hover .galleryDescription {
-		display: inline-block;
-	} */
 	.galleryImage {
 		width: 100%;
 		height: auto;
@@ -540,4 +625,10 @@ body{
 	footer {
 		padding: 0px 10px 100px 10px;
 	}
+}
+.icon:hover{
+	filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(60%) contrast(86%);
+}
+.icon.active{
+	filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(60%) contrast(86%);
 }
