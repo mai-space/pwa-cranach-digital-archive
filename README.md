@@ -22,10 +22,13 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 * Gallery Styles
 * Toolbar fix
 * Resposive Overhaul
-#### Still TODO
-* Gallery Sidebar
-* More Page
+* Gallery Searchbar on Mobile, Tablet
 * Active Icon Highlight
+#### Still TODO
+* Gallery Searchbar on Desktop
+* More Page
+* Detail Picture View Page
+* 
 
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)

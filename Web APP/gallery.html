@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/reset.css" type="text/css"/>
     <link rel="stylesheet" href="assets/styles.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,20 +15,18 @@
         <ul>
             <li><a href="qrscan.html"><img src="assets/img/navigation/qrscan.svg" class="icon"><p class="navname">QR Scan</p></a></li>
             <li><a href="history.html"><img src="assets/img/navigation/history.svg" class="icon"><p class="navname">Zuletzt Ge&ouml;ffnet</p></a></li>
-            <li><a href="gallery.html"><img src="assets/img/navigation/gallery.svg" class="icon"><p class="navname">Galerie</p></a></li>
+            <li><a href="gallery.html"><img src="assets/img/navigation/gallery.svg" class="icon active"><p class="navname">Galerie</p></a></li>
             <li><a href="more.html"><img src="assets/img/navigation/more.svg" class="icon"><p class="navname">Mehr</p></a></li>
         </ul>
     </div>
 
     <div id="content">
-        <h1>Gallery</h1>
-        
-
+        <h1>Galerie</h1>
         <div class="gallery">
             <div class="sidebar"> 
-                <h2>Suche</h2>
                 <form>
-                    <input type="text" placeholder="Search..">
+                    <input class="searchbar" type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
 
