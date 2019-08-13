@@ -28,7 +28,13 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 * Gallery Searchbar on Desktop
 * More Page
 * Detail Picture View Page
-* 
-
+  
+### 13/08/2019 Coding Session @inf166
+#### Got Done
+* Detail Picture View Page
+#### Still TODO
+* CSS Clean Up
+  
+  
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
