@@ -33,8 +33,9 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 #### Got Done
 * Detail Picture View Page
 #### Still TODO
+* Gallery Searchbar Stylized
 * CSS Clean Up
   
-  
+
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
