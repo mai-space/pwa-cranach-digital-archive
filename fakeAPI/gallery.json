@@ -1,0 +1,16 @@
+{
+    "paintings": [{
+        "id": 1,
+        "artist": "Lucas Cranach",
+        "title": "Painting 1",
+        "date": "01.10.1900",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna m dolor sit amet"
+    },
+    {
+        "id": 2,
+        "artist": "Lucas Cranach II",
+        "title": "Painting 2",
+        "date": "10.01.1850",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna m dolor sit amet"
+    }]
+}
