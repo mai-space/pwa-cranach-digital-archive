@@ -32,8 +32,8 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 ### 13/08/2019 Coding Session @inf166
 #### Got Done
 * Detail Picture View Page
+* Gallery Searchbar Stylized & fixed
 #### Still TODO
-* Gallery Searchbar Stylized
 * CSS Clean Up
   
 
