@@ -47,27 +47,27 @@ body {
 	display: none;
 }
 
-#content {
+.content {
 	z-index: 1;
 }
 
-#content h1 {
+.content h1 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	font-size: 44px;
 	line-height: 130%;
 }
 
-#content h2 a {
+.content h2 a {
 	text-decoration: none;
 	color: var(--highlight);
 }
 
-#content h2 {
+.content h2 {
 	padding-bottom: 10px;
 }
 
-#content p {
+.content p {
 	padding-top: 10px;
 	font-size: 16px;
 	line-height: 130%;
@@ -159,16 +159,16 @@ body {
 		width: 36px;
 		height: auto;
 	}
-	#content {
+	.content {
 		padding: 0px 20% 0px 20%;
 	}
-	#content h1 {
+	.content h1 {
 		font-size: 44px;
 	}
-	#content h2 {
+	.content h2 {
 		font-size: 24px;
 	}
-	#content p {
+	.content p {
 		font-size: 16px;
 	}
 	.recentRow {
@@ -447,16 +447,16 @@ body {
 		width: 36px;
 		height: auto;
 	}
-	#content {
+	.content {
 		padding: 0px 10% 0px 10%;
 	}
-	#content h1 {
+	.content h1 {
 		font-size: 44px;
 	}
-	#content h2 {
+	.content h2 {
 		font-size: 24px;
 	}
-	#content p {
+	.content p {
 		font-size: 16px;
 	}
 	.recentRow {
@@ -736,16 +736,16 @@ body {
 		width: 36px;
 		height: auto;
 	}
-	#content {
+	.content {
 		padding: 0px 10px 0px 10px;
 	}
-	#content h1 {
+	.content h1 {
 		font-size: 44px;
 	}
-	#content h2 {
+	.content h2 {
 		font-size: 24px;
 	}
-	#content p {
+	.content p {
 		font-size: 16px;
 	}
 	.recentRow {
