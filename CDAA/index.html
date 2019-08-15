@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Cranach Digital App Archive</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="assets/js/instascan.min.js"></script>
+</head>
+
+<body>
+    <div id="navigation">
+        <ul>
+            <li><a href="#scan" onclick="changePage('scan');"><img id="scanicon" src="assets/img/navigation/qrscan.svg" class="icon"><p class="navname">QR Scan</p></a></li>
+            <li><a href="#history" onclick="changePage('history');"><img id="historyicon" src="assets/img/navigation/history.svg" class="icon"><p class="navname">Zuletzt Ge&ouml;ffnet</p></a></li>
+            <li><a href="#gallery" onclick="changePage('gallery');"><img id="galleryicon" src="assets/img/navigation/gallery.svg" class="icon"><p class="navname">Galerie</p></a></li>
+            <li><a href="#more" onclick="changePage('more');"><img id="moreicon" src="assets/img/navigation/more.svg" class="icon"><p class="navname">Mehr</p></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="content" id="scan">
+            <video id="qr-preview"></video>
+            <script type="text/javascript" src="assets/js/scanner.js"></script>
+        </div>
+
+        <div class="content" id="info" style="display:none">
+            <h1>INFO</h1>
+            <div id="infoContent"></div>
+        </div>
+
+        <div class="content" id="history" style="display:none">
+            <h1>HISTORY</h1>
+            <div id="historyContent"><p>No Scan History.</p></div>
+        </div>
+
+        <div class="content" id="gallery" style="display:none">
+            <h1>GALLERY</h1>
+            <div id="galleryContent"></div>
+        </div>
+
+        <div class="content" id="more" style="display:none">
+            <h1>MORE</h1>
+            <div id="moreContent">
+                <ul class="more-links">
+                    <li><a href="https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA" target="_blank">GitHub Repository</a></li>
+                    <li><a href="https://inf166.github.io/WDSS19-Praxisarbeit-CDAA/" target="_blank">Projekt Dokumentation</a></li>
+                    <li><a href="https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/issues" target="_blank">Contact</a></li>
+                    <li><a href="https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/blob/master/LICENSE" target="_blank">License</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="assets/js/application.js"></script>
+    <script type="text/javascript" src="assets/js/navigation.js"></script>
+</body>
+</html>
