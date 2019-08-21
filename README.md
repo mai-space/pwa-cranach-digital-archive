@@ -29,5 +29,9 @@ _Geplante Funktionen:_
 _Andere Änderungen:_
 > Unser GitHub Repo trägt nun den Namen CDAA -> Cranach Digital App Archive
 
+### 15.08.2019 Teambesprechung
+- @bamalamusic gets own branch for /docs
+- @bamalamusic creates own site for documentation
+
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
