@@ -20,10 +20,6 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 - Style/Theme Completion in Cooperation with @inf166
 - Implementation of Advanced PWA Functionality
 
-### 15.08.2019 Teambesprechung
-- @bamalamusic gets own branch for /docs
-- @bamalamusic creates own site for documentation
-
 ### 15.08.2019 
 #### Done:
 - @inf166 Body fix -> Content now looks like before
