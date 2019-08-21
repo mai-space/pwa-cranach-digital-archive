@@ -14,7 +14,7 @@ async function updateGallery() {
 
 function createGalleryPainting(painting) {
     return `
-        <div class="galleryRow">
+        <div class="galleryRow" data-gallery-id="${painting.id}">
             <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
             <div class="galleryDescription">
                 <h3 class="galleryTitle">${painting.title}</h3>
@@ -36,15 +36,13 @@ function updateHistory() {
                 galleryData.paintings.forEach((painting, index) => {
                     if (painting.id == scan) {
                         historyContainer.innerHTML += `
-                        <div class="recentRow ${scanHistory.length - 1 == index ? 'new' : ''}">
-                            <a href="#">
-                                <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
-                                <div class="recentContent">
-                                    <span class="recentTitle">${painting.title}</span>
-                                    <span class="recentTime">${painting.date}</span>
-                                    <span class="recentTeaser">${painting.description}</span> 
-                                </div>      
-                            </a>
+                        <div class="recentRow ${scanHistory.length - 1 == index ? 'new' : ''}" data-gallery-id="${painting.id}">
+                            <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                            <div class="recentContent">
+                                <span class="recentTitle">${painting.title}</span>
+                                <span class="recentTime">${painting.date}</span>
+                                <span class="recentTeaser">${painting.description}</span>
+                            </div>      
                         </div>               
                         `;
                     }
@@ -65,7 +63,7 @@ function updateInfo(content) {
                 infoContainer.innerHTML = `
                     <h2 id="infoTitle">${painting.title}</h2>
                     <h3 id="infoDate">${painting.date}</h3>
-                    <h4 id="infoAuthor">${painting.autor}</h4>
+                    <h4 id="infoArtist">${painting.artist}</h4>
                     <p id="infoDescription">${painting.description}</p>
                 `;
             }
