@@ -60,11 +60,52 @@ function updateInfo(content) {
     if (galleryData) {
         galleryData.paintings.forEach((painting) => {
             if (painting.id == content) {
+                var detailSections = '';
+                painting.chapters.forEach((chapter) => {
+                    detailSections += `<div class="detailSection"><h2>${chapter.title}</h2><button><span>more</span></button><p>${chapter.content}</p></div>`;
+                });
                 infoContainer.innerHTML = `
-                    <h2 id="infoTitle">${painting.title}</h2>
-                    <h3 id="infoDate">${painting.date}</h3>
-                    <h4 id="infoArtist">${painting.artist}</h4>
-                    <p id="infoDescription">${painting.description}</p>
+                    <div class="detailRow">
+                        <img class="detailImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                        <div class="detailInfo">
+                            <h3 class="detailTitle">${painting.title}</h3>
+                            <span class="detailDate">${painting.date}</span>
+                            <span class="detailImages" data-gallery-id="${painting.id}"><i class="far fa-images">More Images</i></span>
+                        </div>
+                        <div class="detailSection">
+                            <h2>Description</h2>
+                            <button><span>more</span></button>
+                            <p>${painting.description}</p>
+                        </div>
+                        ${detailSections}
+                    </div>
+                `;
+            }
+        });
+    }
+}
+
+const imageViewContainer = document.querySelector('#infoImageView');
+async function updateImageView(paintingID) {
+    var imageViewRequest = await fetch(`${apiURL}/gallery/${paintingID}/more.json`);
+    var imageViewJSON = await imageViewRequest.json();
+
+    if (galleryData && imageViewJSON) {
+        galleryData.paintings.forEach((painting) => {
+            if (painting.id == paintingID) {
+                var imageView = '';
+                imageViewJSON.images.forEach((image) => {
+                    imageView += `<li><img class="galleryImage" src="${apiURL}/gallery/${painting.id}/${image}" alt="${image}" /></li>`;
+                });
+                imageViewContainer.innerHTML = `
+                <div class="goBack" data-gallery-id="${painting.id}">
+                    <button><span><i class="fa fa-chevron-left"></i> Back</span></button>
+                </div>                   
+                
+                <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                <div class="imagePreview">
+                    <ul>${imageView}</ul>
+                </div>
                 `;
             }
         });
