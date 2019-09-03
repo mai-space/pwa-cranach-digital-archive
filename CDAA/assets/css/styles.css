@@ -138,6 +138,10 @@ body {
 		text-decoration: none;
 		color: var(--highlight);
 	}
+	.detailImages i {
+		color: var(--highlight);
+		cursor: pointer;
+	}
 }
 
 
