@@ -6,6 +6,7 @@ function changePage(page) {
         stopScanner();
         document.getElementById('scan').style.display = 'none';
         document.body.style.overflow = 'auto';
+        document.getElementById('scanicon').style.filter = '';
     } else {
         startScanner();
         document.getElementById('scan').style.display = 'block';
@@ -21,20 +22,26 @@ function changePage(page) {
 
     if (page != 'history') {
         document.getElementById('history').style.display = 'none';
+        document.getElementById('historyicon').style.filter = '';
     } else {
         document.getElementById('history').style.display = 'block';
+        document.getElementById('historyicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
     }
 
     if (page != 'gallery') {
         document.getElementById('gallery').style.display = 'none';
+        document.getElementById('galleryicon').style.filter = '';
     } else {
         document.getElementById('gallery').style.display = 'block';
+        document.getElementById('galleryicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
     }
 
     if (page != 'more') {
         document.getElementById('more').style.display = 'none';
+        document.getElementById('moreicon').style.filter = '';
     } else {
         document.getElementById('more').style.display = 'block';
+        document.getElementById('moreicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
     }
 }
 
