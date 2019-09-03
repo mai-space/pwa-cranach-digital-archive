@@ -46,6 +46,7 @@ function changePage(page) {
 }
 
 $(document).ready(function(){
+    document.getElementById('scanicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
     $(document).on('click','.galleryRow', function() {
         updateInfo($(this).data("gallery-id"));
         changePage('info');
