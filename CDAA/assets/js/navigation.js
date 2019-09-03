@@ -1,5 +1,6 @@
 function changePage(page) {
     document.getElementById('infoImageView').style.display = 'none';
+    document.getElementById('infoContent').style.display = 'block';
 
     if (page != 'scan') {
         stopScanner();
@@ -9,7 +10,7 @@ function changePage(page) {
         startScanner();
         document.getElementById('scan').style.display = 'block';
         document.body.style.overflow = 'hidden';
-		document.getElementById('scanicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
+        document.getElementById('scanicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
     }
 
     if (page != 'info') {
@@ -61,7 +62,6 @@ $(document).ready(function(){
 
     $(document).on('click','.goBack', function() {
         updateInfo($(this).data("gallery-id"));
-        document.getElementById('infoContent').style.display = 'block';
         changePage('info');
     });
 });
