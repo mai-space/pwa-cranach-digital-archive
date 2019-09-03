@@ -35,5 +35,18 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 #### To-Do:
 - Implementation of PWA Functionality
 
+### 03.09.2019 
+#### Done:
+- Minor Bugfixes & Style Updates
+- Changed QR-Validation Functionality
+- Updated Info Page Structure to work with Styles
+- Updated fakeAPI to work with Image View (ghetto, but fine for prototyping)
+- Added Additional Image View + Navigation (requires internet connection)
+
+#### To-Do:
+- Info Page Styling
+- Image View Styling -> Needs Rework from @inf166
+- *Implementation of PWA Functionality*
+
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
