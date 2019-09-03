@@ -49,6 +49,7 @@ body {
 
 .content {
 	z-index: 1;
+	padding-bottom: 60px;
 }
 
 .content h1 {
@@ -160,7 +161,7 @@ body {
 		height: auto;
 	}
 	.content {
-		padding: 0px 20% 0px 20%;
+		padding: 0px 20% 60px 20%;
 	}
 	.content h1 {
 		font-size: 44px;
@@ -317,7 +318,6 @@ body {
 		padding-bottom: 60px;
 	}
 	.detailRow {
-		padding: 15px 30% 0 30%;
 	}
 	.detailImage {
 		width: 100%;
@@ -447,7 +447,7 @@ body {
 		height: auto;
 	}
 	.content {
-		padding: 0px 10% 0px 10%;
+		padding: 0px 10% 60px 10%;
 	}
 	.content h1 {
 		font-size: 44px;
@@ -601,7 +601,6 @@ body {
 		padding-bottom: 60px;
 	}
 	.detailRow {
-		padding: 15px 10% 0 10%;
 	}
 	.detailImage {
 		width: 100%;
@@ -736,7 +735,7 @@ body {
 		height: auto;
 	}
 	.content {
-		padding: 0px 10px 0px 10px;
+		padding: 0px 10px 60px 10px;
 	}
 	.content h1 {
 		font-size: 44px;
@@ -891,7 +890,6 @@ body {
 		padding-bottom: 60px;
 	}
 	.detailRow {
-		padding: 10px 10px 0px 10px;
 	}
 	.detailImage {
 		width: 100%;
