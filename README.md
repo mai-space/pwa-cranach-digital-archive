@@ -48,5 +48,33 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 - Image View Styling -> Needs Rework from @inf166
 - *Implementation of PWA Functionality*
 
+### 04.09.2019 
+#### Done:
+- Implementation of basic PWA Functionality
+  - Manifest File/Icons
+  - Service-Worker
+- Static Asset Caching
+  - Web App (Styles, Scripts, ...)
+  - Gallery Data (gallery.json)
+- Dynamic Asset Caching
+  - Thumbnail Images
+  - Image View Images (will be removed from caching)
+
+#### To-Do:
+- Service-Worker Improvements (See Comments)
+- Page Styling from/with @inf166
+  - New Navigation Issues
+  - Image View !!!
+
+#### Comments:
+- PWA Installation works flawless on Android Devices
+- PWA works offline, but requires multiple reloads to fetch images from dynamic cache
+  - Should be be sufficient for a prototype, but can be improved
+- Image View Images are cached dynamically
+  - Should be removed from caching as they require a lot of space on the device
+  - Page is only available with active internet connection anyway
+- gallery.json currently contains all the image information
+  - Will not be changed (as planned)
+
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
