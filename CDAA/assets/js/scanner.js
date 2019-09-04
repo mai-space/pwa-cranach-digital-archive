@@ -15,12 +15,12 @@ function startScanner() {
             let camera = 0;
             if (cameras[1]) camera = 1;
             scanner.start(cameras[camera]).then(() => {
-                console.log('Success: Scanner Started.');
+                console.log('[Scanner]: Scanner Started.');
             }).catch((err) => {
-                console.error('Error: Failed To Start Scanner: ' + err);
+                console.error('[Scanner]: Failed To Start Scanner: ' + err);
             });
         } else {
-            console.error('Error: No Cameras Found.');
+            console.error('[Scanner]: No Cameras Found.');
         }
     }).catch(function (e) {
         console.error(e);
@@ -30,13 +30,13 @@ startScanner();
 
 function stopScanner() {
     scanner.stop().catch((err) => {
-        console.error('Error: Unable to stop Scanner!\nReason: ' + err);
+        console.error('[Scanner]: Unable to stop Scanner!\nReason: ' + err);
     });
 }
 
 const qrPrefix = 'CDAA-';
 scanner.addListener('scan', (content) => {
-    console.log('Code Scanned: ' + content);
+    console.log('[Scanner]: Code Scanned: ' + content);
     if (content.startsWith(qrPrefix)) {
         var imgID = content.replace(qrPrefix, '');
         if (parseInt(imgID)) {
@@ -46,12 +46,12 @@ scanner.addListener('scan', (content) => {
                 updateInfo(imgID);
                 changePage('info');
             }).catch((err) => {
-                console.error('Error: Unable to stop Scanner!\nReason: ' + err);
+                console.error('[Scanner]: Unable to stop Scanner!\nReason: ' + err);
             });
         } else {
-            alert('Error: Invalid Gallery ID!');
+            alert('[Scanner]: Invalid Gallery ID!');
         }
     } else {
-        alert('Error: No CDAA QR-Code!'); 
+        alert('[Scanner]: No CDAA QR-Code!'); 
     }
 });
