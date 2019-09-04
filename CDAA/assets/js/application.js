@@ -1,7 +1,7 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js').catch((err) => {
 		console.error('[ERROR] Service Workers are not supported.');
-	)};
+	});
 }
 
 const apiURL = 'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI';
