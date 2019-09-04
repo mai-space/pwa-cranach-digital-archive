@@ -1,4 +1,6 @@
-const staticAssets = [
+const cacheStatic = 'cache-static';
+const cacheDynamic = 'cache-dynamic';
+const assetsStatic = [
     'index.html',
     'manifest.json',
     'assets/img/manifest/favicon.ico',
@@ -26,7 +28,6 @@ const staticAssets = [
     'assets/img/navigation/selected/more.svg',
     'assets/img/navigation/selected/qrscan.svg',
     'assets/img/misc/point.svg',
-    'assets/img/404.png',
     'https://fonts.googleapis.com/css?family=Lato&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
     'https://code.jquery.com/jquery-3.4.1.min.js',
@@ -37,26 +38,32 @@ self.addEventListener('install', (event) => {
     console.log('[Service-Worker] Installed.');
 
     event.waitUntil(
-        caches.open('static').then((cache) => {
-            cache.addAll(staticAssets);
+        caches.open(cacheStatic).then((cache) => {
+            cache.addAll(assetsStatic);
         })
     );
 });
 
-self.addEventListener('activate', () => {
+self.addEventListener('activate', (event) => {
     console.log('[Service-Worker] Activated.');
+
+    event.waitUntil(
+        caches.keys().then((keys) => {
+            Promise.all(keys.map((key) => { if (key == cacheDynamic) caches.delete(key); }));
+        })      
+    );
 });
 
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-     caches.match(event.request).then((res) => {
+        caches.match(event.request).then((res) => {
             if (res) return res;
             fetch(event.request).then((response) => {
-                caches.open('dynamic').then((cache) => {
-                    cache.put(event.request.url, response.clone());
-                    return response;
-                })
-            }).catch((err) => {});
-        }).catch((err) => {})
+                caches.open(cacheDynamic).then((cache) => {
+                    cache.put(event.request, response.clone());
+                });
+                return response;
+            });
+        })
     );
 });
