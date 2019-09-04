@@ -1,8 +1,10 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
 
 const apiURL = 'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI';
 
 var galleryData;
-
 const galleryContainer = document.querySelector('#galleryContent');
 
 async function updateGallery() {
