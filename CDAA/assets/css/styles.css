@@ -47,6 +47,14 @@ body {
 	display: none;
 }
 
+.icon:hover {
+	filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%);
+}
+
+.iconActive {
+	filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%);
+}
+
 .content {
 	z-index: 1;
 	padding-bottom: 60px;
@@ -1006,14 +1014,6 @@ body {
 		padding: 0px 10px 100px 10px;
 		font-size: 10px;
 	}
-}
-
-.icon:hover {
-	filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%);
-}
-
-.icon.active {
-	filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%);
 }
 
 #scan {

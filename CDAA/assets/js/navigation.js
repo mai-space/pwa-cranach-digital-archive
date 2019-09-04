@@ -6,12 +6,12 @@ function changePage(page) {
         stopScanner();
         document.getElementById('scan').style.display = 'none';
         document.body.style.overflow = 'auto';
-        document.getElementById('scanicon').style.filter = '';
+        document.getElementById('iconScan').classList.remove('iconActive');
     } else {
         startScanner();
         document.getElementById('scan').style.display = 'block';
         document.body.style.overflow = 'hidden';
-        document.getElementById('scanicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
+        document.getElementById('iconScan').classList.add('iconActive');
     }
 
     if (page != 'info') {
@@ -22,31 +22,30 @@ function changePage(page) {
 
     if (page != 'history') {
         document.getElementById('history').style.display = 'none';
-        document.getElementById('historyicon').style.filter = '';
+        document.getElementById('iconHistory').classList.remove('iconActive');
     } else {
         document.getElementById('history').style.display = 'block';
-        document.getElementById('historyicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
+        document.getElementById('iconHistory').classList.add('iconActive');
     }
 
     if (page != 'gallery') {
         document.getElementById('gallery').style.display = 'none';
-        document.getElementById('galleryicon').style.filter = '';
+        document.getElementById('iconGallery').classList.remove('iconActive');
     } else {
         document.getElementById('gallery').style.display = 'block';
-        document.getElementById('galleryicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
+        document.getElementById('iconGallery').classList.add('iconActive');
     }
 
     if (page != 'more') {
         document.getElementById('more').style.display = 'none';
-        document.getElementById('moreicon').style.filter = '';
+        document.getElementById('iconMore').classList.remove('iconActive');
     } else {
         document.getElementById('more').style.display = 'block';
-        document.getElementById('moreicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
+        document.getElementById('iconMore').classList.add('iconActive');
     }
 }
 
-$(document).ready(function(){
-    document.getElementById('scanicon').style.filter = 'invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%)';
+$(document).ready(function() {
     $(document).on('click','.galleryRow', function() {
         updateInfo($(this).data("gallery-id"));
         changePage('info');
