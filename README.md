@@ -18,7 +18,7 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 #### To-Do:
 - Code Refactoring
 - Style/Theme Completion in Cooperation with @inf166
-- Implementation of Advanced PWA Functionality
+- Implementation of PWA Functionality
 
 ### 15.08.2019 
 #### Done:
@@ -50,7 +50,7 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 
 ### 04.09.2019 
 #### Done:
-- Implementation of basic PWA Functionality
+- Implementation of PWA Functionality
   - Manifest File/Icons
   - Service-Worker
 - Static Asset Caching
@@ -61,7 +61,7 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
   - Image View Images (will be removed from caching)
 
 #### To-Do:
-- Service-Worker Improvements (See Comments)
+- Service-Worker Improvements (see comments)
 - Page Styling from/with @inf166
   - New Navigation Issues
   - Image View !!!
@@ -70,11 +70,18 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 - PWA Installation works flawless on Android Devices
 - PWA works offline, but requires multiple reloads to fetch images from dynamic cache
   - Should be be sufficient for a prototype, but can be improved
-- Image View Images are cached dynamically
+- Image View Images are getting cached
   - Should be removed from caching as they require a lot of space on the device
   - Page is only available with active internet connection anyway
-- gallery.json currently contains all the image information
-  - Will not be changed (as planned)
+
+### 05.09.2019 
+#### Done:
+- Improved Navigation Icon Styling
+- Improved Dynamic Caching
+
+#### To-Do:
+- More Service-Worker Improvements
+- More Page Styling
 
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
