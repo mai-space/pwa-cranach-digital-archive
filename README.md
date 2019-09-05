@@ -78,6 +78,7 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019
 #### Done:
 - Improved Navigation Icon Styling
 - Improved Dynamic Caching
+- Improved ImageView Styling
 
 #### To-Do:
 - More Service-Worker Improvements
