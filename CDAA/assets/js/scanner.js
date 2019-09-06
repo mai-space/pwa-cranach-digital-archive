@@ -1,6 +1,6 @@
 const scanner_options = {
     continuous: true,
-    video: document.getElementById('qr-preview'),
+    video: document.getElementById('qr-camera'),
     mirror: false,
     captureImage: false,
     backgroundScan: true,
