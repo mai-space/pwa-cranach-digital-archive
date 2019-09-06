@@ -5,7 +5,7 @@
         "title": "The Crucifixion of Christ",
         "date": "1500-1501",
         "description": "The panel depicts a crucifixion with many figures set in a rocky landscape. The cross, which occupies the centre of the painting consists of roughly worked tree trunks, the body of Christ is covered in blood and marked by wounds from the flagellation. The two thieves flank him either side to the left and the right. The attendant figures are divided between two groups at the foot of the cross: to the left are the women in mourning and St John grouped around the Virgin and to the right is a group of flamboyantly dressed men on horseback. On the left edge of the painting there is a man in peasant clothing.",
-		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/gallery/1/main.jpg",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/1/main.jpg",
 		"chapters": [
 			{
 				"title": "Dimensions",
@@ -23,7 +23,7 @@
         "title": "The penitent St Jerome",
         "date": "1502",
         "description": "Saint Jerome is depicted naked from the waist up, kneeling in front of a crucifix in a woody landscape, with a lion at his feet. In his right hand he holds a stone and with his left he scratches his beard. In the background there are houses and a view of a distant mountainous landscape.",
-		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/gallery/2/main.jpg",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/2/main.jpg",
 		"chapters": [
 			{
 				"title": "Dimensions",
