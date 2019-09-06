@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
 	});
 }
 
-const apiURL = 'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/fakeAPI';
+const apiURL = 'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API';
 
 var galleryData;
 const galleryContainer = document.querySelector('#galleryContent');
