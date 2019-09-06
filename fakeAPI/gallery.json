@@ -1,18 +1,38 @@
 {
     "paintings": [{
         "id": 1,
-        "artist": "Lucas Cranach",
-        "title": "Painting 1",
-        "date": "01.10.1900",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna m dolor sit amet",
-		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/paintings/1/main.jpg"
+        "artist": "Lucas Cranach the Elder",
+        "title": "The Crucifixion of Christ",
+        "date": "1500-1501",
+        "description": "The panel depicts a crucifixion with many figures set in a rocky landscape. The cross, which occupies the centre of the painting consists of roughly worked tree trunks, the body of Christ is covered in blood and marked by wounds from the flagellation. The two thieves flank him either side to the left and the right. The attendant figures are divided between two groups at the foot of the cross: to the left are the women in mourning and St John grouped around the Virgin and to the right is a group of flamboyantly dressed men on horseback. On the left edge of the painting there is a man in peasant clothing.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/gallery/1/main.jpg",
+		"chapters": [
+			{
+				"title": "Dimensions",
+				"content": "Dimensions of support: 58.4(t) - 58.1 (b) x 45.1 (l) - 45.8 (r) x 2.5 - 2.6 cm (3-4 mm laminated board, total max. 9 mm. The original size has largely been preserved)"
+			},
+			{
+				"title": "Support",
+				"content": "Painting on lime wood (Tilia sp.)"
+			}
+		]
     },
     {
         "id": 2,
-        "artist": "Lucas Cranach II",
-        "title": "Painting 2",
-        "date": "10.01.1850",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna m dolor sit amet",
-		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/paintings/2/main.jpg"
+        "artist": "Lucas Cranach the Elder",
+        "title": "The penitent St Jerome",
+        "date": "1502",
+        "description": "Saint Jerome is depicted naked from the waist up, kneeling in front of a crucifix in a woody landscape, with a lion at his feet. In his right hand he holds a stone and with his left he scratches his beard. In the background there are houses and a view of a distant mountainous landscape.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/gallery/2/main.jpg",
+		"chapters": [
+			{
+				"title": "Dimensions",
+				"content": "Dimensions of support: 56 (l.)- 55.9 (r.) cm x 41.4 cm (the support has ben thinned and cradled) Dimensions of the painted surface: correspond with those of the support Dimensions including the frame: 69 x 55 x 5 cm"
+			},
+			{
+				"title": "Support",
+				"content": "Painting on lime wood (Tilia sp.)"
+			}
+		]
     }]
 }

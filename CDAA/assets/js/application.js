@@ -1,8 +1,12 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').catch((err) => {
+		console.error('[ERROR] Service Workers are not supported.');
+	});
+}
 
 const apiURL = 'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI';
 
 var galleryData;
-
 const galleryContainer = document.querySelector('#galleryContent');
 
 async function updateGallery() {
@@ -14,7 +18,7 @@ async function updateGallery() {
 
 function createGalleryPainting(painting) {
     return `
-        <div class="galleryRow">
+        <div class="galleryRow" data-gallery-id="${painting.id}">
             <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
             <div class="galleryDescription">
                 <h3 class="galleryTitle">${painting.title}</h3>
@@ -36,15 +40,13 @@ function updateHistory() {
                 galleryData.paintings.forEach((painting, index) => {
                     if (painting.id == scan) {
                         historyContainer.innerHTML += `
-                        <div class="recentRow ${scanHistory.length - 1 == index ? 'new' : ''}">
-                            <a href="#">
-                                <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
-                                <div class="recentContent">
-                                    <span class="recentTitle">${painting.title}</span>
-                                    <span class="recentTime">${painting.date}</span>
-                                    <span class="recentTeaser">${painting.description}</span> 
-                                </div>      
-                            </a>
+                        <div class="recentRow ${scanHistory.length - 1 == index ? 'new' : ''}" data-gallery-id="${painting.id}">
+                            <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                            <div class="recentContent">
+                                <span class="recentTitle">${painting.title}</span>
+                                <span class="recentTime">${painting.date}</span>
+                                <span class="recentTeaser">${painting.description}</span>
+                            </div>      
                         </div>               
                         `;
                     }
@@ -62,11 +64,52 @@ function updateInfo(content) {
     if (galleryData) {
         galleryData.paintings.forEach((painting) => {
             if (painting.id == content) {
+                var detailSections = '';
+                painting.chapters.forEach((chapter) => {
+                    detailSections += `<div class="detailSection"><h2>${chapter.title}</h2><button><span>more</span></button><p>${chapter.content}</p></div>`;
+                });
                 infoContainer.innerHTML = `
-                    <h2 id="infoTitle">${painting.title}</h2>
-                    <h3 id="infoDate">${painting.date}</h3>
-                    <h4 id="infoAuthor">${painting.autor}</h4>
-                    <p id="infoDescription">${painting.description}</p>
+                    <div class="detailRow">
+                        <img class="detailImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                        <div class="detailInfo">
+                            <h3 class="detailTitle">${painting.title}</h3>
+                            <span class="detailDate">${painting.date}</span>
+                            <span class="detailImages" data-gallery-id="${painting.id}"><i class="far fa-images">More Images</i></span>
+                        </div>
+                        <div class="detailSection">
+                            <h2>Description</h2>
+                            <button><span>more</span></button>
+                            <p>${painting.description}</p>
+                        </div>
+                        ${detailSections}
+                    </div>
+                `;
+            }
+        });
+    }
+}
+
+const imageViewContainer = document.querySelector('#infoImageView');
+async function updateImageView(paintingID) {
+    var imageViewRequest = await fetch(`${apiURL}/gallery/${paintingID}/more.json`);
+    var imageViewJSON = await imageViewRequest.json();
+
+    if (galleryData && imageViewJSON) {
+        galleryData.paintings.forEach((painting) => {
+            if (painting.id == paintingID) {
+                var imageView = '';
+                imageViewJSON.images.forEach((image) => {
+                    imageView += `<li><img class="galleryImage" src="${apiURL}/gallery/${painting.id}/${image}" alt="${image}" /></li>`;
+                });
+                imageViewContainer.innerHTML = `
+                <div class="goBack" data-gallery-id="${painting.id}">
+                    <button><span><i class="fa fa-chevron-left"></i> Back</span></button>
+                </div>                   
+                
+                <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                <div class="imagePreview">
+                    <ul>${imageView}</ul>
+                </div>
                 `;
             }
         });
