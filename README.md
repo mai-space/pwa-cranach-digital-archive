@@ -1,51 +1,16 @@
 # WebDev Projekt 2019 - Cranach Digital App Archive
 Praxisprojekt zum Vertiefungsmodul Web Development 2019
 
-## Front End 
-[For Testing](http://maispace.de/test)
+## Inhaltsverzeichnis
+* [Projektdokumentation](https://inf166.github.io/WDSS19-Praxisarbeit-CDAA/#Projektdokumentation)
+* [Termindokumentationen](https://inf166.github.io/WDSS19-Praxisarbeit-CDAA/#Termindokumentationen)
+  * [05/08/2019 Teambesprechung](https://inf166.github.io/WDSS19-Praxisarbeit-CDAA/#05082019-teambesprechung)
 
-### 05/08/2019 Coding Session @inf166
-#### Got Done
-* Responsive-Behaviour der Web App via Media Queries
-* Color Variables hinzugefügt
-* Icons patched
-* MockUps Added
-* index.html Styles
-* History.html Styles
-#### Still TODO
-* Gallery styles
-* Settings styles
-* Active Icon Highlight
+## Projektdokumentation
 
-### 06/08/2019 Coding Session @inf166
-#### Got Done
-* Gallery Styles
-* Toolbar fix
-* Resposive Overhaul
-* Gallery Searchbar on Mobile, Tablet
-* Active Icon Highlight
-#### Still TODO
-* Gallery Searchbar on Desktop
-* More Page
-* Detail Picture View Page
-  
-### 13/08/2019 Coding Session @inf166
-#### Got Done
-* Detail Picture View Page
-* Gallery Searchbar Stylized & fixed
-#### Still TODO
-* CSS Clean Up
-
-### 15.08.2019 Teambesprechung
-- @bamalamusic gets own branch for /docs
-- @bamalamusic creates own site for documentation
-
-### 15.08.2019 
-#### Done:
-- @inf166 Body fix -> Content now looks like before
-- ActivePageIndicator via JS (navigation.js)
-#### To-Do:
-- QR Scanner Styling
+### Was ist das CDAA?
+### Wo soll das CDAA verwendet werden?
+### Wer hat am CDAA mitgewirkt?
 
 ## License
 [GNU General Public License v3.0](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
