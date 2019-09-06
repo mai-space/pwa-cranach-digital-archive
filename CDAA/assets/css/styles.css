@@ -248,7 +248,13 @@ body {
 
 	/* GALLERY PAGE STYLING */
 	.gallery {
-		display: inline-block;
+		display: inline-block;	
+	}
+
+	#galleryContent {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	}
 
 	.galleryRow {
@@ -473,16 +479,20 @@ body {
 /* Media Query for Tablet Devices */
 @media (min-width: 601px) {
 	#navigation ul {
-		padding: 0px 10% 0px 10%;
-		width: 80%;
+		padding: 0px 10px 0px 10px;
+		width: 100%;
 	}
-
+	#galleryContent {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr);
+	}
 	.content {
-		padding: 0px 10% 60px 10%;
+		padding: 0px 10px 60px 10px;
 	}
 
 	footer {
-		padding: 0px 10% 60px 10%;
+		padding: 0px 10px 60px 10px;
 		font-size: 14px;
 	}
 }
