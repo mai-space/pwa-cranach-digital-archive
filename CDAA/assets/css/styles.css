@@ -72,6 +72,7 @@ body {
 		display: block;
 		width: 36px;
 		height: auto;
+		margin: auto;
 	}
     .icon:hover {
         filter: invert(36%) sepia(80%) saturate(5758%) hue-rotate(230deg) brightness(70%) contrast(90%);
@@ -412,7 +413,7 @@ body {
 @media (min-width: 801px) {
 	#navigation ul {
 		padding: 0px 25% 0px 25%;
-		width: 80%;
+		width: 50%;
 	}
 	.content {
 		padding: 0px 25% 60px 25%;
