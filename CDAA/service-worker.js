@@ -1,4 +1,4 @@
-const cacheStatic = 'CDAA-Static-v1';
+const cacheStatic = 'CDAA-Static-v2';
 const cacheDynamic = 'CDAA-Dynamic';
 
 const cacheFiles = [
