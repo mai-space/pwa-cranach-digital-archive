@@ -307,7 +307,6 @@ body {
 	.detailImage {
 		width: 100%;
 		height: auto;
-		border: 1px solid var(--dark);
 		border-radius: 5px;
 	}
 
@@ -398,7 +397,7 @@ body {
 		padding: 15px 0px;
 		background-color: var(--grey);
 		color: var(--light);
-		font-size: 18px;
+		font-size: 24px;
 		border: none;
 	}
 
@@ -413,7 +412,7 @@ body {
 	}
 
 	.imageView .imagePreview {
-		padding-top: 75px;
+		padding-top: 82px;
 		padding-bottom: 60px;
 		overflow: hidden;
 		display: grid;
