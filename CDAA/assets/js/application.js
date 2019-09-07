@@ -106,9 +106,8 @@ async function updateImageView(paintingID) {
                     <button><span><i class="fa fa-chevron-left"></i> Back</span></button>
                 </div>                   
                 <div class="imagePreview">
-                <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
-                ${imageView}
-                </div>
+					<img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+					${imageView}
                 </div>
                 `;
             }
