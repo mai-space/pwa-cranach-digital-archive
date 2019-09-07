@@ -99,16 +99,16 @@ async function updateImageView(paintingID) {
             if (painting.id == paintingID) {
                 var imageView = '';
                 imageViewJSON.images.forEach((image) => {
-                    imageView += `<li><img class="galleryImage" src="${apiURL}/gallery/${painting.id}/${image}" alt="${image}" /></li>`;
+                    imageView += `<img class="galleryImage" src="${apiURL}/gallery/${painting.id}/${image}" alt="${image}" />`;
                 });
                 imageViewContainer.innerHTML = `
                 <div class="goBack" data-gallery-id="${painting.id}">
                     <button><span><i class="fa fa-chevron-left"></i> Back</span></button>
                 </div>                   
-                
-                <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
                 <div class="imagePreview">
-                    <ul>${imageView}</ul>
+                <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                ${imageView}
+                </div>
                 </div>
                 `;
             }
