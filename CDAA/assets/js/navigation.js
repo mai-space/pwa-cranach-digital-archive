@@ -21,6 +21,7 @@ function showPage(page, icon = null) {
 }
 
 function changePage(page) {
+    $('html,body').scrollTop(0);
     document.getElementById('infoContent').style.display = 'block';
     document.getElementById('infoImageView').style.display = 'none';
 
