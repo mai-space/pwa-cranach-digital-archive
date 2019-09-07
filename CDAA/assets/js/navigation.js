@@ -1,47 +1,57 @@
+function hidePage(page, icon = null) {
+    document.getElementById(page).style.display = 'none';
+    if (icon != null) document.getElementById(icon).classList.remove('iconActive');
+}
+
+function showPage(page, icon = null) {
+    document.getElementById(page).style.display = 'block';
+    if (icon != null) document.getElementById(icon).classList.add('iconActive');
+
+    if (page == 'scan') {
+        startScanner();
+        document.body.style.overflow = 'hidden';
+    } else {
+        stopScanner();
+        document.body.style.overflow = 'auto';
+    }
+
+    if (page == 'info') {
+        document.getElementById('infoTitle').style.display = 'block';
+    }
+}
+
 function changePage(page) {
-    document.getElementById('infoImageView').style.display = 'none';
     document.getElementById('infoContent').style.display = 'block';
+    document.getElementById('infoImageView').style.display = 'none';
 
     if (page != 'scan') {
-        stopScanner();
-        document.getElementById('scan').style.display = 'none';
-        document.body.style.overflow = 'auto';
-        document.getElementById('iconScan').classList.remove('iconActive');
+        hidePage('scan', 'iconScan');
     } else {
-        startScanner();
-        document.getElementById('scan').style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        document.getElementById('iconScan').classList.add('iconActive');
+        showPage('scan', 'iconScan');
     }
 
     if (page != 'info') {
-        document.getElementById('info').style.display = 'none';
+        hidePage('info');
     } else {
-        document.getElementById('info').style.display = 'block';
+        showPage('info');
     }
 
     if (page != 'history') {
-        document.getElementById('history').style.display = 'none';
-        document.getElementById('iconHistory').classList.remove('iconActive');
+        hidePage('history', 'iconHistory');
     } else {
-        document.getElementById('history').style.display = 'block';
-        document.getElementById('iconHistory').classList.add('iconActive');
+        showPage('history', 'iconHistory');
     }
 
     if (page != 'gallery') {
-        document.getElementById('gallery').style.display = 'none';
-        document.getElementById('iconGallery').classList.remove('iconActive');
+        hidePage('gallery', 'iconGallery');
     } else {
-        document.getElementById('gallery').style.display = 'block';
-        document.getElementById('iconGallery').classList.add('iconActive');
+        showPage('gallery', 'iconGallery');
     }
 
     if (page != 'more') {
-        document.getElementById('more').style.display = 'none';
-        document.getElementById('iconMore').classList.remove('iconActive');
+        hidePage('more', 'iconMore');
     } else {
-        document.getElementById('more').style.display = 'block';
-        document.getElementById('iconMore').classList.add('iconActive');
+        showPage('more', 'iconMore');
     }
 }
 
@@ -71,6 +81,5 @@ $(document).ready(function() {
     $(document).on('click','.goBack', function() {
         updateInfo($(this).data("gallery-id"));
         changePage('info');
-        document.getElementById('infoTitle').style.display = 'block';
     });
 });
