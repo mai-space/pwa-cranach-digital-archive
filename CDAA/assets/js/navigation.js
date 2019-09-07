@@ -1,47 +1,49 @@
+function showPage(context, icon = null) {
+    document.getElementById(context).style.display = 'block';
+    if (icon) document.getElementById(icon).classList.add('iconActive');
+}
+
+function hidePage(context, icon = null) {
+    document.getElementById(context).style.display = 'none';
+    if (icon) document.getElementById(icon).classList.remove('iconActive');
+}
+
 function changePage(page) {
     document.getElementById('infoImageView').style.display = 'none';
     document.getElementById('infoContent').style.display = 'block';
 
     if (page != 'scan') {
         stopScanner();
-        document.getElementById('scan').style.display = 'none';
+        hidePage(page, 'iconScan');
         document.body.style.overflow = 'auto';
-        document.getElementById('iconScan').classList.remove('iconActive');
     } else {
         startScanner();
-        document.getElementById('scan').style.display = 'block';
+        activePage(page, 'iconScan');
         document.body.style.overflow = 'hidden';
-        document.getElementById('iconScan').classList.add('iconActive');
     }
 
     if (page != 'info') {
-        document.getElementById('info').style.display = 'none';
+        hidePage(page);
     } else {
-        document.getElementById('info').style.display = 'block';
+        activePage(page);
     }
 
     if (page != 'history') {
-        document.getElementById('history').style.display = 'none';
-        document.getElementById('iconHistory').classList.remove('iconActive');
+        hidePage(page, 'iconHistory');
     } else {
-        document.getElementById('history').style.display = 'block';
-        document.getElementById('iconHistory').classList.add('iconActive');
+        activePage(page, 'iconHistory');
     }
 
     if (page != 'gallery') {
-        document.getElementById('gallery').style.display = 'none';
-        document.getElementById('iconGallery').classList.remove('iconActive');
+        hidePage(page, 'iconGallery');
     } else {
-        document.getElementById('gallery').style.display = 'block';
-        document.getElementById('iconGallery').classList.add('iconActive');
+        activePage(page, 'iconGallery');
     }
 
     if (page != 'more') {
-        document.getElementById('more').style.display = 'none';
-        document.getElementById('iconMore').classList.remove('iconActive');
+        hidePage(page, 'iconMore');
     } else {
-        document.getElementById('more').style.display = 'block';
-        document.getElementById('iconMore').classList.add('iconActive');
+        activePage(page, 'iconMore');
     }
 }
 
