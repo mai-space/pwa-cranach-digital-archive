@@ -31,7 +31,7 @@ const assetsStatic = [
     'https://fonts.googleapis.com/css?family=Lato&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
     'https://code.jquery.com/jquery-3.4.1.min.js',
-    'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/wip/backend/fakeAPI/gallery.json'
+    'https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery.json'
 ];
 
 self.addEventListener('install', (event) => {
