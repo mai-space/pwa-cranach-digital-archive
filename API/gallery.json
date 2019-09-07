@@ -1,37 +1,181 @@
 {
     "paintings": [{
         "id": 1,
-        "artist": "Lucas Cranach the Elder",
-        "title": "The Crucifixion of Christ",
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Kreuzigung Christi",
         "date": "1500-1501",
-        "description": "The panel depicts a crucifixion with many figures set in a rocky landscape. The cross, which occupies the centre of the painting consists of roughly worked tree trunks, the body of Christ is covered in blood and marked by wounds from the flagellation. The two thieves flank him either side to the left and the right. The attendant figures are divided between two groups at the foot of the cross: to the left are the women in mourning and St John grouped around the Virgin and to the right is a group of flamboyantly dressed men on horseback. On the left edge of the painting there is a man in peasant clothing.",
+        "description": "Vielfigurige Kreuzigung in felsiger Landschaft, das Kreuz in der Bildmitte, aus einem rohen, nur grob behauenen Baumstamm gebildet, der Körper Christi blutüberströmt und stark von den Spuren der Passion gezeichnet, links und rechts von den beiden, ebenfalls auf rohen Baumstämmen gekreuzigten Schächern flankiert. Die Assistenzfiguren am Fuß des Kreuzes sind in zwei Gruppen geteilt, links die trauernden Frauen um Maria mit Johannes, ganz am linken Bildrand eine bäuerlich gekleidete Figur, rechts eine Gruppe von drei auffallend gekleideten Reitern.",
 		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/1/main.jpg",
 		"chapters": [
 			{
-				"title": "Dimensions",
-				"content": "Dimensions of support: 58.4(t) - 58.1 (b) x 45.1 (l) - 45.8 (r) x 2.5 - 2.6 cm (3-4 mm laminated board, total max. 9 mm. The original size has largely been preserved)"
+				"title": "Maße",
+				"content": "Maße Bildträger: 58,4 (oben) - 58,1 (unten) x 45,1(links) - 45.8 (rechts) x 2,5 - 2,6 cm (3-4 mm Aufdoppelung, Gesamtstärke max. 9 mm. Das originale Bildformat ist weitgehend erhalten)"
 			},
 			{
-				"title": "Support",
-				"content": "Painting on lime wood (Tilia sp.)"
+				"title": "Bildträger",
+				"content": "Malerei auf Lindenholz (Tilia sp.) "
 			}
 		]
     },
     {
         "id": 2,
-        "artist": "Lucas Cranach the Elder",
-        "title": "The penitent St Jerome",
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Büssender Hl. Hieronymus",
         "date": "1502",
-        "description": "Saint Jerome is depicted naked from the waist up, kneeling in front of a crucifix in a woody landscape, with a lion at his feet. In his right hand he holds a stone and with his left he scratches his beard. In the background there are houses and a view of a distant mountainous landscape.",
+        "description": "Der Hl. Hieronymus kniet mit nacktem Oberkörper, in der Rechten einen Stein, mit der Linken den Bart raufend, zu seinen Füßen den Löwen, vor einem Kruzifix in einer Waldlandschaft. Im Hintergrund Häuser und Ausblick auf ferne Gebirgslandschaft",
 		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/2/main.jpg",
 		"chapters": [
 			{
-				"title": "Dimensions",
-				"content": "Dimensions of support: 56 (l.)- 55.9 (r.) cm x 41.4 cm (the support has ben thinned and cradled) Dimensions of the painted surface: correspond with those of the support Dimensions including the frame: 69 x 55 x 5 cm"
+				"title": "Maße",
+				"content": "Maße Bildträger: 56 (li.)- 55,9 (re.) cm x 41,4 cm (Tafel gedünnt und parkettiert) Maße Bildfläche: entsprechen Bildträgermaßen Rahmenmaße: 69 x 55 x 5 cm"
 			},
 			{
-				"title": "Support",
-				"content": "Painting on lime wood (Tilia sp.)"
+				"title": "Bildträger",
+				"content": "Malerei auf Lindenholz (Tilia sp.)"
+			}
+		]
+    },
+    {
+        "id": 3,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Bildnis des Johannes Cuspinian",
+        "date": "1502",
+        "description": "Brustbildnis des Historiographen Dr. Johannes Cuspinian (eigentlich Spiessheimer) Teil eines Diptychons (Gegenstück zum Bildnis der Anna Cuspinian)",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/3/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 60,3 x 45,5 x 0,45-0,55 cm (Format nahezu original)"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Fichtenholz (Picea sp.)"
+			}
+		]
+    },
+    {
+        "id": 4,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Bildnis der Anna Cuspinian",
+        "date": "1502",
+        "description": "Brustbildnis der Frau des Historiographen Dr. Johannes Cuspinian (Spiessheimer) Teil eines Diptychons (Gegenstück zum Bildnis des Johannes Cuspinian)",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/4/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 60,2-60,1 x 45,5-45 x 0,45-0,55 cm (Format nahezu original)"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Fichtenholz (Picea sp.)"
+			}
+		]
+    },
+    {
+        "id": 5,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Bildnis eines Juristen",
+        "date": "1503",
+        "description": "",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/5/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 54,1 x 39 x 0,5-0,6 cm"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Fichtenholz (Picea sp.)"
+			}
+		]
+    },
+    {
+        "id": 6,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Die Madonna mit dem Kinde",
+        "date": "um 1510",
+        "description": "Die Tafel zeigt die Jungfrau mit dem Kind vor einer weiten Landschaft. Hinter einem steinernen Sims stehend, hält Maria das Kind in beiden Händen über einem aufwendig verzierten Kissen und blickt ihren Sohn dabei liebevoll an. Das Jesuskind erwidert den Blick und hält in seinen Händen Weintrauben als Zeichen der Eucharistie. Er liegt auf dem fast durchsichtigen Schleier der Maria, der auch ihre mittig gescheiteltes braunes Haar bedeckt. Über einem rotem Gewand trägt sie einen blauen weiten Mantel. Links neben dem Kissen liegt ein Siegelring, der speigelverkehrt das Monogramm und das Cranachs Schlagensignet ziert. Im Hintergrund erheben sich drei, fälschlicherweise als Tannen bezeichneten Bäume über einigen Büschen. Sie erlauben den Blick auf eine bergige Landschaft. Am linken Rand thront eine Burg auf einem hohen Felsmassiv.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/6/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 70,3 x 56,5 cm"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Holz"
+			}
+		]
+    },
+    {
+        "id": 7,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Adam und Eva",
+        "date": "1513-1515",
+        "description": "Das Urelternpaar vor dunklem Hintergrund, der Baum der Erkenntnis zwischen ihnen, darin ist die Schlange Eva zugewandt, diese hat den Apfel in der erhobenen rechten Hand und blickt Adam an, der in fragendem Gestus auf sich zeigt.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/7/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 72 x 62 cm Maße mit Rahmen: 84 x 73 x 9,5 cm"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Holz"
+			}
+		]
+    },
+    {
+        "id": 8,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Das Parisurteil",
+        "date": "1512-1514",
+        "description": "Diese ist die erste von mehreren Version des Parisurteils bei Cranach. Laut der griechischen Mythologie lobte die Göttin Eris (Zwietracht) einen Apfel aus, der der Schönsten der olympischen Göttinen gehören sollte. Jupiter sandte den Götterboten Merkur zu Paris, dem Prinzen von Troja, damit dieser über den Preis entscheide. Die drei Göttinnen, die Anspruch auf den Apfel erhoben, versuchten ihn mit Zugaben zu bestechen: Juno bot Reichtum und Macht, Minerva militärischen Erfolg und Venus die Liebe der schönsten Frau auf Erden. Paris' Entscheidung für Venus und sein Raub der schönsten Frau, der spartanischen Königin Helena, führte zum Trojanischen Krieg. Cranachs Darstellung dieses Themas wurde beeinflusst von Guido della Colonnas Historia Destructionis Troiae, einer reich ausgeschmückten mittelalterlichen Erzählung des Trojanischen Krieges. Diese beschreibt wie Paris sein Pferd anbindet und in den Schlaf fällt, als er sich bei der Jagd verlaufen hat. Im Traum erscheint ihm Merkur und präsentiert ihm die drei Göttinnen. Bei diesem Gemälde reizt der Künstler Paris und den Betrachter mit einer schweren Entscheidung, denn die drei Göttinnen sind nicht zu unterscheiden und sehr verführerisch.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/8/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 43 x 32,2 cm (17 x 12-3/4 Zoll)"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Holz"
+			}
+		]
+    },
+    {
+        "id": 9,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Die Heilige Sippe",
+        "date": "1510-1512",
+        "description": "Zentral in der Bildmitte befindet sich die Anna-Selbdritt-Gruppe (Anna, Maria, Jesus), welche für dieses Gemälde zu einer Heiligen Sippe erweitert wurde, indem auch Marias Halbschwestern, Maria Kleophas und Maria Salome, mit ihren Familien dargestellt sind.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/9/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 89 x 71 cm "
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Holz"
+			}
+		]
+    },
+    {
+        "id": 10,
+        "artist": "Lucas Cranach der Ältere",
+        "title": "Salome",
+        "date": "1510-1512",
+        "description": "Salome ist als Halbfigur vor einen schwarzen Font gesetzt, gegen den sich ihr Kleid aus dunkelgrünem Samt kaum abhebt. Die Ärmel des Kleides legen an Schultern und Ellenbogen voluminös gebauschten weißen Stoff frei, über den Stoffbänder laufen. Das tiefe Dekolletee des Kleides lenkt den Blick auf die beiden prächtigen Halskette der Salome. Bemerkenswert ist, dass sich die edelsteinbesetzte Kette dem am Hals deutlich ablesbaren Schattenwurf vollkommen zu entziehen scheint. Die rosigen Wangen der Salome rahmen lange lockige Strähnen ihres braunen Haares, das größtenteils unter einer aufwendig verzierten Haube verborgen ist. Der Schönheit der Frau wird der Schrecken des abgeschlagenen Hauptes Johannes' des Täufers gegenübergestellt, das Salome auf einem Teller in Händen hält. Dieser Effekt wird durch die Blickregie gesteigert: Während Salome rechts am Betrachter vorbeiblickt, scheinen die halbgeöffneten Augen des Enthaupteten diesen direkt in den Blick zu fassen.",
+		"urlToMainImage": "https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/10/main.jpg",
+		"chapters": [
+			{
+				"title": "Maße",
+				"content": "Maße Bildträger: 72,5 x 54,3 cm"
+			},
+			{
+				"title": "Bildträger",
+				"content": "Malerei auf Lindenholz"
 			}
 		]
     }]
