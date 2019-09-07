@@ -18,32 +18,32 @@ function changePage(page) {
         document.body.style.overflow = 'auto';
     } else {
         startScanner();
-        showPage(page, 'iconScan');
+        activePage(page, 'iconScan');
         document.body.style.overflow = 'hidden';
     }
 
     if (page != 'info') {
         hidePage(page);
     } else {
-        showPage(page);
+        activePage(page);
     }
 
     if (page != 'history') {
         hidePage(page, 'iconHistory');
     } else {
-        showPage(page, 'iconHistory');
+        activePage(page, 'iconHistory');
     }
 
     if (page != 'gallery') {
         hidePage(page, 'iconGallery');
     } else {
-        showPage(page, 'iconGallery');
+        activePage(page, 'iconGallery');
     }
 
     if (page != 'more') {
         hidePage(page, 'iconMore');
     } else {
-        showPage(page, 'iconMore');
+        activePage(page, 'iconMore');
     }
 }
 
