@@ -61,6 +61,7 @@ $(document).ready(function() {
             updateImageView($(this).data("gallery-id")).then(() => {
                 document.getElementById('infoContent').style.display = 'none';
                 document.getElementById('infoImageView').style.display = 'block';
+                document.getElementById('infotitle').style.display = 'none';
             });
         } else {
             alert('Error: Internet Connection Required!');
@@ -70,5 +71,6 @@ $(document).ready(function() {
     $(document).on('click','.goBack', function() {
         updateInfo($(this).data("gallery-id"));
         changePage('info');
+        document.getElementById('infotitle').style.display = 'block';
     });
 });
