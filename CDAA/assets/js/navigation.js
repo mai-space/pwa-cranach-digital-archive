@@ -85,11 +85,11 @@ $(document).ready(function() {
     });
 
     $('#searchField').keyup(function() {
-        var search = $(this).val();
+        var search = $(this).val().toLowerCase();
         var entries = document.getElementsByClassName('galleryRow');
 
         for (let i = 0; i < entries.length; i++) {
-            var title = entries[i].childNodes[3].childNodes[1].innerHTML;
+            var title = entries[i].childNodes[3].childNodes[1].innerHTML.toLowerCase();
             if (!title.startsWith(search)) {
                 entries[i].style.display = 'none';
             }
