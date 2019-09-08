@@ -89,9 +89,15 @@ $(document).ready(function() {
         var entries = document.getElementsByClassName('galleryRow');
 
         for (let i = 0; i < entries.length; i++) {
-            var title = entries[i].childNodes[3].childNodes[1].innerHTML.toLowerCase();
-            if (!title.startsWith(search)) {
-                entries[i].style.display = 'none';
+            if (search == '') {
+                entries[i].style.display = 'block';
+            } else {
+                var title = entries[i].childNodes[3].childNodes[1].innerHTML.toLowerCase();
+                if (!title.startsWith(search)) {
+                    entries[i].style.display = 'none';
+                } else {
+                    entries[i].style.display = 'block';
+                }
             }
         }
     });
