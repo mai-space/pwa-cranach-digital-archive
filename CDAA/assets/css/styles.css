@@ -231,6 +231,7 @@ body {
 		color: var(--light);
 		border: none;
 		border-bottom: 1px solid var(--dark);
+		box-sizing: border-box;
 	}
 	.sidebar input[type=text]:focus {
 		border-bottom: 1px solid var(--highlight);
