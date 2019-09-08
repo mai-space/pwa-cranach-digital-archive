@@ -54,7 +54,7 @@ function updateHistory() {
             }
         });
     } else {
-        historyContainer.innerHTML = '<p>No Scan History.</p>';
+        historyContainer.innerHTML = '<p>Ganz schön leer hier.</p>';
     }
 }
 
@@ -66,7 +66,7 @@ function updateInfo(content) {
             if (painting.id == content) {
                 var detailSections = '';
                 painting.chapters.forEach((chapter) => {
-                    detailSections += `<div class="detailSection"><h2>${chapter.title}</h2><button><span>more</span></button><p>${chapter.content}</p></div>`;
+                    detailSections += `<div class="detailSection"><h2>${chapter.title}</h2><button><span>mehr</span></button><p>${chapter.content}</p></div>`;
                 });
                 infoContainer.innerHTML = `
                     <div class="detailRow">
@@ -78,7 +78,7 @@ function updateInfo(content) {
                         </div>
                         <div class="detailSection">
                             <h2>Beschreibung</h2>
-                            <button><span>more</span></button>
+                            <button><span>mehr</span></button>
                             <p>${painting.description}</p>
                         </div>
                         ${detailSections}
