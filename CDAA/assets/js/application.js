@@ -74,10 +74,10 @@ function updateInfo(content) {
                         <div class="detailInfo">
                             <h3 class="detailTitle">${painting.title}</h3>
                             <span class="detailDate">${painting.date}</span>
-                            <span class="detailImages" data-gallery-id="${painting.id}"><i class="far fa-images">More Images</i></span>
+                            <span class="detailImages" data-gallery-id="${painting.id}"><i class="far fa-images">Mehr Bilder</i></span>
                         </div>
                         <div class="detailSection">
-                            <h2>Description</h2>
+                            <h2>Beschreibung</h2>
                             <button><span>more</span></button>
                             <p>${painting.description}</p>
                         </div>
@@ -103,7 +103,7 @@ async function updateImageView(paintingID) {
                 });
                 imageViewContainer.innerHTML = `
                 <div class="goBack" data-gallery-id="${painting.id}">
-                    <button><span><i class="fa fa-chevron-left"></i> Back</span></button>
+                    <button><span><i class="fa fa-chevron-left"></i> Zurück</span></button>
                 </div>                   
                 <div class="imagePreview">
 					<img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
