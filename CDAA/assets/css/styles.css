@@ -45,7 +45,6 @@ body {
 
 	#navigation ul li {
 		list-style: none;
-		margin: auto;
 	}
 
 	#navigation ul li:nth-child(1) {
