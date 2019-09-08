@@ -83,4 +83,22 @@ $(document).ready(function() {
         updateInfo($(this).data("gallery-id"));
         changePage('info');
     });
+
+    $('#searchField').keyup(function() {
+        var search = $(this).val().toLowerCase();
+        var entries = document.getElementsByClassName('galleryRow');
+
+        for (let i = 0; i < entries.length; i++) {
+            if (search == '') {
+                entries[i].style.display = 'block';
+            } else {
+                var title = entries[i].childNodes[3].childNodes[1].innerHTML.toLowerCase();
+                if (!title.startsWith(search)) {
+                    entries[i].style.display = 'none';
+                } else {
+                    entries[i].style.display = 'block';
+                }
+            }
+        }
+    });
 });
