@@ -102,7 +102,7 @@ async function updateImageView(paintingID) {
                 });
                 imageViewContainer.innerHTML = `
                 <div class="goBack" data-gallery-id="${painting.id}">
-                    <button><span><i class="fa fa-chevron-left"></i> Zurück</span></button>
+                    <button><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></button>
                 </div>                   
                 <div class="imagePreview">
 					<img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
