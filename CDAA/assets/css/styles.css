@@ -14,7 +14,6 @@ body {
 	background-color: var(--dark);
 	color: var(--light);
 	font-family: 'Lato', sans-serif;
-	line-height: 130%;
 }
 
 /* Media Query for ALL Devices */
@@ -133,7 +132,7 @@ body {
 	.content p {
 		padding-top: 10px;
 		font-size: 16px;
-		line-height: 130%;
+		line-height: 135%;
 	}
 
 	/* HISTORY/RECENT PAGE STYLING */
@@ -228,11 +227,12 @@ body {
 		background-color: var(--dark);
 		color: var(--light);
 		border: none;
-		border-bottom: 1px solid var(--dark);
+		border: 1px solid var(--lowcontrast);
+		border-radius: 5px;
 		box-sizing: border-box;
 	}
 	.searchBar input[type=text]:focus {
-		border-bottom: 1px solid var(--highlight);
+		border: 1px solid var(--highlight);
 	}
 
 	/* GALLERY PAGE STYLING */
@@ -258,13 +258,14 @@ body {
 		height: auto;
 		border: 1px solid var(--dark);
 		border-radius: 5px;
+		margin-bottom: 10px;
 	}
 
 	/* .galleryDescription {} */
 
 	.galleryTitle {
 		float: left;
-		font-size: 16px;
+		font-size: 22px;
 		font-weight: bold;
 	}
 
@@ -278,13 +279,15 @@ body {
 		overflow: hidden;
 		display: inline-block;
 		font-size: 14px;
+		opacity: 0.9;
+		padding-bottom: 5px;
 	}
 
 	.galleryRow::after {
 		display: inline-block;
 		color: var(--highlight);
 		content: "mehr...";
-		padding-bottom: 15px;
+		padding-bottom: 16px;
 	}
 
 	/* DETAIL/INFO PAGE STYLING */
@@ -297,6 +300,7 @@ body {
 		width: 100%;
 		height: auto;
 		border-radius: 5px;
+		margin-bottom: 10px;
 	}
 
 	.detailInfo {
@@ -306,8 +310,9 @@ body {
 	}
 
 	.detailTitle {
-		font-size: 24px;
+		font-size: 22px;
 		margin-bottom: 5px;
+		font-weight: bold;
 	}
 
 	.detailDate {
@@ -320,23 +325,31 @@ body {
 	}
 
 	.detailSection {
-		line-height: 130%;
 		padding-bottom: 5px;
+		margin-top: 15px;
 		border-bottom: 1px solid var(--grey);
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 
 	.detailSection h2 {
-		margin-bottom: 5px;
+		padding-bottom: 5px;
+		font-size: 22px;
+		font-weight: bold;
+
 	}
 
-	.detailSection button {
-		display: none;
+	.detailSection i {
+		float: right;
+		font-size: 22px;
+		font-weight: bold;
+		cursor: pointer;
 	}
 
 	.detailSection p {
 		transition: max-height 0.2s ease-out;
 		font-size: 16px;
+		padding: 0px;
+		opacity: 0.9;
 	}
 
 	.detailSection table {
