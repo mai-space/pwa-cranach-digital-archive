@@ -66,7 +66,7 @@ function updateInfo(content) {
             if (painting.id == content) {
                 var detailSections = '';
                 painting.chapters.forEach((chapter, chapterIndex) => {
-                    detailSections += `<div class="detailSection"><i id="toggleSection" data-section-id="${chapterIndex + 1}" class="fa fa-angle-down" aria-hidden="true"></i><h2>${chapter.title}</h2><p id="sectionID-${chapterIndex + 1}">${chapter.content}</p></div>`;
+                    detailSections += `<div class="detailSection" data-section-id="${chapterIndex + 1}"><i id="sectionIcon-${chapterIndex + 1}" class="fa fa-angle-right" aria-hidden="true"></i><h2>${chapter.title}</h2><p id="sectionContent-${chapterIndex + 1}" style="display:none">${chapter.content}</p></div>`;
                 });
                 infoContainer.innerHTML = `
                     <div class="detailRow">
@@ -76,9 +76,9 @@ function updateInfo(content) {
                             <span class="detailDate">${painting.date}</span>
                             <span class="detailImages" data-gallery-id="${painting.id}"><i class="far fa-images">Mehr Bilder</i></span>
                         </div>
-                        <div class="detailSection">
-                            <i id="toggleSection" data-section-id="0" class="fa fa-angle-down" aria-hidden="true"></i><h2>Beschreibung</h2>
-                            <p id="sectionID-0">${painting.description}</p>
+                        <div class="detailSection" data-section-id="0">
+                            <i id="sectionIcon-0" class="fa fa-angle-right" aria-hidden="true"></i><h2>Beschreibung</h2>
+                            <p id="sectionContent-0" style="display:none">${painting.description}</p>
                         </div>
                         ${detailSections}
                     </div>
