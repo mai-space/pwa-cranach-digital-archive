@@ -227,13 +227,17 @@ body {
 		padding: 14px;
 		background-color: var(--dark);
 		color: var(--light);
-		border: none;
+		/* border: none; */
 		border: 1px solid var(--lowcontrast);
 		border-radius: 5px;
 		box-sizing: border-box;
 	}
 	.searchBar input[type=text]:focus {
 		border: 1px solid var(--highlight);
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: var(--light);
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
 	/* GALLERY PAGE STYLING */
@@ -327,9 +331,9 @@ body {
 
 	.detailSection {
 		padding-bottom: 5px;
-		margin-top: 15px;
+		margin-top: 10px;
 		border-bottom: 1px solid var(--grey);
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	.detailSection h2 {
