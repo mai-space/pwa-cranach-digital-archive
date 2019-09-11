@@ -379,8 +379,8 @@ body {
 	.goBack {
 		z-index: 5;
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 10px;
+		left: 10px;
 		position: fixed;
 		width: 100%;
 		height: 60px;
@@ -397,12 +397,17 @@ body {
 		grid-row: 2/3;
 		text-align: left;
 		margin: auto;
-		padding: 15px 10px;
-		/* background-color: var(--dark); */
-		background: radial-gradient(var(--dark),#28282d , #00000000, #00000000);
+		padding: 10px 11px;
+		line-height: 80%;
+		background-color: var(--grey);
+		/* background: radial-gradient(var(--dark),#28282d , #28282dad, #00000000); */
 		color: var(--light);
 		font-size: 22px;
-		border: none;
+		border: 2px solid (var(--lowcontrast));
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.15);
+		box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.15);
 	}
 
 	.goBack button span:hover {
@@ -417,7 +422,7 @@ body {
 
 	.imageView .imagePreview {
 		/* padding-top: 82px; */
-		padding-top: 15px;
+		padding-top: 10px;
 		padding-bottom: 60px;
 		overflow: hidden;
 		display: grid;
