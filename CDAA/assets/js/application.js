@@ -35,24 +35,29 @@ var scanHistory = new Array();
 function updateHistory() {
     historyContainer.innerHTML = '';
     if (scanHistory.length > 0) {
-        scanHistory.reverse().forEach((scan) => {
-            if (galleryData) {
-                galleryData.paintings.forEach((painting, index) => {
-                    if (painting.id == scan) {
-                        historyContainer.innerHTML += `
-                        <div class="recentRow ${scanHistory.length - 1 == index ? 'new' : ''}" data-gallery-id="${painting.id}">
-                            <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
-                            <div class="recentContent">
-                                <span class="recentTitle">${painting.title}</span>
-                                <span class="recentTime">${painting.date}</span>
-                                <span class="recentTeaser">${painting.description}</span>
-                            </div>      
-                        </div>               
-                        `;
-                    }
-                });
-            }
-        });
+        var lastElement = document.getElementsByClassName('new');
+        for (let i = 0; i < lastElement.length; i++) {
+            lastElement[i].classList.remove('new');
+        }
+
+        if (galleryData) {
+            scanHistory.slice().reverse().forEach((scanID, scanIndex) => {
+                    galleryData.paintings.forEach((painting) => {
+                        if (painting.id == scanID) {
+                            historyContainer.innerHTML += `
+                            <div class="recentRow ${(scanIndex == 0) ? 'new' : ''}" data-gallery-id="${painting.id}">
+                                <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                                <div class="recentContent">
+                                    <span class="recentTitle">${painting.title}</span>
+                                    <span class="recentTime">${painting.date}</span>
+                                    <span class="recentTeaser">${painting.description}</span>
+                                </div>      
+                            </div>               
+                            `;
+                        }
+                    });
+            });
+        }
     } else {
         historyContainer.innerHTML = '<p>Ganz schön leer hier.</p>';
     }
