@@ -9,7 +9,7 @@
 
 /* Used Font: font-family: 'Lato', sans-serif; */
 
-/* General Design Scheme */
+/* Body */
 body {
 	background-color: var(--dark);
 	color: var(--light);
@@ -232,12 +232,13 @@ body {
 		border-radius: 5px;
 		box-sizing: border-box;
 	}
+	
 	.searchBar input[type=text]:focus {
 		border: 1px solid var(--highlight);
 		border-radius: 5px;
 		box-sizing: border-box;
 		color: var(--light);
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		outline: none;
 	}
 
 	/* GALLERY PAGE STYLING */
