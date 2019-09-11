@@ -79,6 +79,11 @@ $(document).ready(function() {
         }
     });
 
+    $(document).on('click','#toggleSection', function() {
+        $(this).toggleClass("fa-angle-down fa-angle-right");
+        $("#sectionID-" + $(this).data("section-id")).toggle(500);
+    });
+
     $(document).on('click','.goBack', function() {
         updateInfo($(this).data("gallery-id"));
         changePage('info');
