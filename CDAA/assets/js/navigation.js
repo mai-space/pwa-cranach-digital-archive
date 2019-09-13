@@ -17,7 +17,6 @@ function showPage(page, icon = null) {
 
     if (page == 'info') {
         document.getElementById('infoTitle').style.display = 'block';
-        document.getElementById('iconGallery').classList.add('iconActive');
     }
 }
 
@@ -39,15 +38,23 @@ function changePage(page) {
     }
 
     if (page != 'gallery') {
-        hidePage('gallery', 'iconGallery');
+        if (page == 'info') {
+            hidePage('gallery');
+        } else {
+            hidePage('gallery', 'iconGallery');
+        }
     } else {
         showPage('gallery', 'iconGallery');
     }
 
     if (page != 'info') {
-        hidePage('info');
+        if (page =='gallery') {
+            hidePage('info');
+        } else {
+            hidePage('info', 'iconGallery');
+        }
     } else {
-        showPage('info');
+        showPage('info', 'iconGallery');
     }
 
     if (page != 'more') {
