@@ -17,7 +17,6 @@ function showPage(page, icon = null) {
 
     if (page == 'info') {
         document.getElementById('infoTitle').style.display = 'block';
-        document.getElementById('iconGallery').classList.add('iconActive');
     }
 }
 
@@ -45,9 +44,9 @@ function changePage(page) {
     }
 
     if (page != 'info') {
-        hidePage('info');
+        hidePage('info', 'iconGallery');
     } else {
-        showPage('info');
+        showPage('info', 'iconGallery');
     }
 
     if (page != 'more') {
