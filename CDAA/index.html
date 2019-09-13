@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/img/manifest/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -64,8 +65,15 @@
             </div>
         </div>
     </main>
-
+    
     <script type="text/javascript" src="assets/js/application.js"></script>
     <script type="text/javascript" src="assets/js/navigation.js"></script>
+    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 500,
+            'wrapAround': true
+        });
+    </script>
 </body>
 </html>
