@@ -79,9 +79,9 @@ $(document).ready(function() {
         }
     });
 
-    $(document).on('click','#toggleSection', function() {
-        $(this).toggleClass("fa-angle-down fa-angle-right");
-        $("#sectionID-" + $(this).data("section-id")).toggle(500);
+    $(document).on('click','.detailSection', function() {
+        $("#sectionIcon-" + $(this).data("section-id")).toggleClass("fa-angle-right fa-angle-down");
+        $("#sectionContent-" + $(this).data("section-id")).toggle(500);
     });
 
     $(document).on('click','.goBack', function() {
