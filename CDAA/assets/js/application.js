@@ -75,7 +75,9 @@ function updateInfo(content) {
                 });
                 infoContainer.innerHTML = `
                     <div class="detailRow">
-                        <img class="detailImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                        <a href="${painting.urlToMainImage}" data-lightbox="detail-${painting.id}" data-title="${painting.title}">
+                            <img class="detailImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                        </a>
                         <div class="detailInfo">
                             <h3 class="detailTitle">${painting.title}</h3>
                             <span class="detailDate">${painting.date}</span>
@@ -103,14 +105,16 @@ async function updateImageView(paintingID) {
             if (painting.id == paintingID) {
                 var imageView = '';
                 imageViewJSON.images.forEach((image) => {
-                    imageView += `<img class="galleryImage" src="${apiURL}/gallery/${painting.id}/${image}" alt="${image}" />`;
+                    imageView += `<a href="${apiURL}/gallery/${painting.id}/${image}" data-lightbox="alternative-${painting.id}" data-title="${painting.title}"><img class="galleryImage" src="${apiURL}/gallery/${painting.id}/${image}" alt="${image}" /></a>`;
                 });
                 imageViewContainer.innerHTML = `
                 <div class="goBack" data-gallery-id="${painting.id}">
                     <button><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></button>
                 </div>                   
                 <div class="imagePreview">
-					<img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                    <a href="${painting.urlToMainImage}" data-lightbox="alternative-${painting.id}" data-title="${painting.title}">
+                        <img class="galleryImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                    </a>
 					${imageView}
                 </div>
                 `;
