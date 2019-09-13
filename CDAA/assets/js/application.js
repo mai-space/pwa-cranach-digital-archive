@@ -35,24 +35,29 @@ var scanHistory = new Array();
 function updateHistory() {
     historyContainer.innerHTML = '';
     if (scanHistory.length > 0) {
-        scanHistory.reverse().forEach((scan) => {
-            if (galleryData) {
-                galleryData.paintings.forEach((painting, index) => {
-                    if (painting.id == scan) {
-                        historyContainer.innerHTML += `
-                        <div class="recentRow ${scanHistory.length - 1 == index ? 'new' : ''}" data-gallery-id="${painting.id}">
-                            <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
-                            <div class="recentContent">
-                                <span class="recentTitle">${painting.title}</span>
-                                <span class="recentTime">${painting.date}</span>
-                                <span class="recentTeaser">${painting.description}</span>
-                            </div>      
-                        </div>               
-                        `;
-                    }
-                });
-            }
-        });
+        var lastElement = document.getElementsByClassName('new');
+        for (let i = 0; i < lastElement.length; i++) {
+            lastElement[i].classList.remove('new');
+        }
+
+        if (galleryData) {
+            scanHistory.slice().reverse().forEach((scanID, scanIndex) => {
+                    galleryData.paintings.forEach((painting) => {
+                        if (painting.id == scanID) {
+                            historyContainer.innerHTML += `
+                            <div class="recentRow ${(scanIndex == 0) ? 'new' : ''}" data-gallery-id="${painting.id}">
+                                <img class="recentImage" src="${painting.urlToMainImage}" alt="${painting.title}" />
+                                <div class="recentContent">
+                                    <span class="recentTitle">${painting.title}</span>
+                                    <span class="recentTime">${painting.date}</span>
+                                    <span class="recentTeaser">${painting.description}</span>
+                                </div>      
+                            </div>               
+                            `;
+                        }
+                    });
+            });
+        }
     } else {
         historyContainer.innerHTML = '<p>Ganz schön leer hier.</p>';
     }
@@ -66,7 +71,7 @@ function updateInfo(content) {
             if (painting.id == content) {
                 var detailSections = '';
                 painting.chapters.forEach((chapter, chapterIndex) => {
-                    detailSections += `<div class="detailSection"><i id="toggleSection" data-section-id="${chapterIndex + 1}" class="fa fa-angle-down" aria-hidden="true"></i><h2>${chapter.title}</h2><p id="sectionID-${chapterIndex + 1}">${chapter.content}</p></div>`;
+                    detailSections += `<div class="detailSection" data-section-id="${chapterIndex + 1}"><i id="sectionIcon-${chapterIndex + 1}" class="fa fa-angle-right" aria-hidden="true"></i><h2>${chapter.title}</h2><p id="sectionContent-${chapterIndex + 1}" style="display:none">${chapter.content}</p></div>`;
                 });
                 infoContainer.innerHTML = `
                     <div class="detailRow">
@@ -76,9 +81,9 @@ function updateInfo(content) {
                             <span class="detailDate">${painting.date}</span>
                             <span class="detailImages" data-gallery-id="${painting.id}"><i class="far fa-images">Mehr Bilder</i></span>
                         </div>
-                        <div class="detailSection">
-                            <i id="toggleSection" data-section-id="0" class="fa fa-angle-down" aria-hidden="true"></i><h2>Beschreibung</h2>
-                            <p id="sectionID-0">${painting.description}</p>
+                        <div class="detailSection" data-section-id="0">
+                            <i id="sectionIcon-0" class="fa fa-angle-right" aria-hidden="true"></i><h2>Beschreibung</h2>
+                            <p id="sectionContent-0" style="display:none">${painting.description}</p>
                         </div>
                         ${detailSections}
                     </div>

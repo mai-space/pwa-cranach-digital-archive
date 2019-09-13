@@ -61,6 +61,10 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     if (event.request.method !== 'GET') return;
+    if (event.request.url.indexOf('https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/API/gallery/') !== -1) {
+        var apiFile = event.request.url.replace(/https:\/\/raw.githubusercontent.com\/Inf166\/WDSS19-Praxisarbeit-CDAA\/master\/API\/gallery\/[0-9]+\//, '');
+        if (!apiFile.startsWith('main')) return;
+    }
 
     event.respondWith(
         caches.match(event.request).then(cachedResponse => {
