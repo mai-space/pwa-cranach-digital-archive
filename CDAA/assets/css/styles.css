@@ -182,7 +182,7 @@ body {
 		display: block;
 		text-overflow: ellipsis;
 		word-wrap: break-word;
-		color: var(--lowcontrast);
+		color: var(--light);
 	}
 
 	.recentRow.new {
