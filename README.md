@@ -25,7 +25,13 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 ## Tutorial, Rundgang und Installationsanleitung des CDAA's
 ### Tutorial & Rundgang
 ### Installationsanleitung der PWA auf dem Smart-Device
-Zur Anleitung den Link öffnen. [hier](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki/Installationsanleitung-der-PWA-auf-dem-Smart-Device)
+Zur Anleitung mit Bildern den Link öffnen. [hier](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki/Installationsanleitung-der-PWA-auf-dem-Smart-Device)
+1. Öffnen des [Links](https://inf155.github.io/Cranach-PWA/demo/)
+2. Seitenmenu öffnen oder die am unteren Rand stehende Pop-Up Nachricht auswählen
+3. Zum Startbildschirm hinzufügen auswählen 
+4. Bestätigen 
+5. Auf dem Startbildschirm wechsel und PWA starten 
+6. PWA Zugriff auf Kamera gewähren 
 
 ## Projektverlauf - Probleme, Lösungen, Dirty Hacks 
 ### Design
@@ -40,13 +46,26 @@ Zu Beginn der Designphase erstellten wir einfache [Mockups](https://github.com/I
 #### Styleguide
 Basierend auf den Mockups entwickelten wir einen [Styleguide](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki/Styleguide) für die Abstände, Schriftgröße und Farbpalette.
 
+#### Hard Coden mit purem CSS
+Natürlich hätte man das ganze Design in Sass schreiben können und dann in CSS kompilieren, aber wir empfunden das schreiben in CSS als absolut ausreichend für ein Projekt dieses Umfangs.
+Eine Komplikation war jedoch das integrieren des QR Scanners, da dieser scheinbar sich nicht wirklich an die von uns geschriebenen CSS Regeln halten konnte, auf Grund von importierten Regeln durch den Scanner die unsere immer wieder überschrieben.
+
 ### Anwendungslogik
+
 ### Besondere Anmerkungen
-#### Frameworks
-- [fontawesome](https://fontawesome.com/v4.7.0/icons/)
-- [lightbox](https://lokeshdhakar.com/projects/lightbox2/)
+
+#### Gelöste Probleme
+
+#### Dirty Hacks
+
+#### Zukünftige Änderungen/Erweiterungen
+Im Feedbacktermin nannte Volker uns ein Framework mit welchem wir den direkten Vergleich zwischen zwei Bilder herstellen könnten. Über einen Schieberegler könnte man dann die Original Gemälde mit den Röntgenaufnahmen vergleichen, was wiederum ein unglaublich nützliches Feature wäre. Jedoch haben wir es in der Zeit nicht mehr geschafft diese Erweierung zu implementieren.
+
+#### Frameworks & Libraries
+- [Fontawesome](https://fontawesome.com/v4.7.0/icons/)
+- [Lightbox](https://lokeshdhakar.com/projects/lightbox2/)
 - [Jquery](https://jquery.com/)
-- [instascan](https://github.com/schmich/instascan)
+- [Instascan](https://github.com/schmich/instascan)
 
 ## Weitere Informationen
 Weitere Informationen bezüglich des Projekts im [WIKI](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki)
