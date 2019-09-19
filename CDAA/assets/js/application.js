@@ -32,6 +32,11 @@ function createGalleryPainting(painting) {
 const historyContainer = document.querySelector('#historyContent');
 var scanHistory = new Array();
 
+function clearHistory() {
+    scanHistory = new Array();
+    updateHistory();
+}
+
 function setHistory(history) {
     scanHistory = history;
     updateHistory();

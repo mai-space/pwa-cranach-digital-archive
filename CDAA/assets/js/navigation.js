@@ -115,7 +115,11 @@ $(document).ready(function() {
         }
     });
 
-    $("form").submit(function(e){
+    $('form').submit(function(e){
         e.preventDefault();
+    });
+
+    $('#clearHistory').click(function() {
+        deleteLocalHistory();
     });
 });
