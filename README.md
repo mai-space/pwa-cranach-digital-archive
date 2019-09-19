@@ -34,6 +34,47 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 
 ## Projektverlauf - Probleme, Lösungen, Dirty Hacks 
 ### Design
+#### Vorbereitung
+Da wir bereits im Wintersemester 2018/19 im Modul Screendesign das Thema 'Mobiler Museumsführer' hatten, hatten wir bereits eine Vorlage mit Anforderungen für die PWA. Da wir uns aber auch deutlich von den Multimedia Funktionen dieser differenzieren wollten, wählten wir für den Styleguide ein paar treffende Änderungen. 
+- Zunächst haben wir die Farbpalette von den original CDA ignoriert und stattdessen Akkuschonende aber für viele Menschen gut lesbare Farben gewählt.
+- Wir entwickelten ein Design das sowohl für den Desktop als auch Tablet und Smartphone gleichermaßen dargestellt werden kann und somit Verwirrung durch Variation und fehlende Konsistenz vermieden.
+- Im Feedbacktermin erhielten wir noch vereinzelt Vorschläge für den Durchschuss(Zeilenhöhe) sowie Schriftgröße.
+#### Mockups
+Zu Beginn der Designphase erstellten wir einfache Mockups um bereits die Funktionalität und den notwenigen Aufwand für das Entwickeln der PWA einzuschätzen. 
+1. ![Erstes Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Initial%20Idea.png "Erstes Mockup")
+2. ![Basic Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/More.jpg "Basic Mockup")
+3. ![Scan Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Scan.jpg "Scan Mockup")
+4. ![Zuletzt gescannt Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Zuletzt.jpg "Zuletzt gescannt Mockup")
+5. ![Galerie Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Galerie.jpg "Galerie Mockup")
+6. ![Extra Informationen Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Bild.jpg "Extra Informationen Mockup")
+#### Styleguide
+Basierend auf den Mockups entwickelten wir einen Styleguide für die Abstände, Schriftgröße und Farbpalette
+##### Abstände
+- Zu einander gehörende Elemente ```padding: 5px;```
+- Hierarchisch getrennte Elemente ```padding: 10px;```
+- Unabhängige Elemente ```padding: 15px;```
+- Außenabstand des Content's zum Displayrand
+  - Mobil & Tablet ```padding: 10px;```
+  - Desktop ```padding: 25%;```
+##### Schriftgröße
+- Seitentitel ```font-size: 44px;```
+- Überschriften ```font-size: 24px;```
+- Text ```font-size: 16px;```
+- Teasertexte ```font-size: 14px;```
+- Footer ```font-size: 10px;```
+##### Durchschuss
+- Für Überschriften: ```line-height: 130;```
+- Für alle Fließtexte: ```line-height: 135;```
+##### Farbpalette
+- Dunkler Hintergrund mit ```--dark: rgb(40, 40, 45);```
+- Toolbar und Navbar mit ```--grey: rgb(56, 54, 67);```
+- weniger wichtige Elemente mit ```--lowcontrast: rgb(160, 157, 176);```
+- Hervorhebung mit ```--highlight: rgb(107, 91, 205);```
+- Schriftfarbe mit ```--light: rgb(238, 238, 238);```
+- Abstufung der Schriftfarbe mit ```opacity: 0.9;```
+##### Bildergrößen
+- Für Mobil ```grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));```
+- Für das Tablet & Desktop ```grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));```
 ### Anwendungslogik
 ### Besondere Anmerkungen
 
