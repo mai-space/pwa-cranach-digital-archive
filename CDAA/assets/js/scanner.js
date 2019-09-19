@@ -41,7 +41,7 @@ scanner.addListener('scan', (content) => {
         var imgID = content.replace(qrPrefix, '');
         if (parseInt(imgID)) {
             scanner.stop().then(() => {
-                scanHistory.push(imgID);
+                saveHistory(imgID);
                 updateHistory();
                 updateInfo(imgID);
                 changePage('info');
