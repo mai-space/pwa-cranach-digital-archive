@@ -48,7 +48,7 @@ Folgt.
 Weitere Informationen bezüglich des Projekts befinden sich im [Wiki](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki) des Projekts.
 
 ## Reflexion
-In einer genauen [Reflexion](Dokumentation/Reflexion.md) des Projektverlaufs werden wesentliche Herausforderungen/Probleme, sowie wichtige und interessante Erkenntnisse vorgestellt.
+In einer genauen [Reflexion](Dokumentation/Reflexion.md) des Projektverlaufs werden wesentliche Herausforderungen/Probleme, sowie wichtige und interessante Erkenntnisse die aus der Projektarbeit hervorgingen vorgestellt.
 
 ## Lizenz
 [MIT](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
