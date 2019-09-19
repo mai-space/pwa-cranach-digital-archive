@@ -1,4 +1,8 @@
-# Reflexion
+# Reflexion/Auswertung nach Abschluss des Projekts
+## Verzeichnis
+- [Design](#design)
+- [Anwendungslogik](#anwendungslogik)
+
 ## Design
 ### Einleitung
 Folgt.
@@ -59,13 +63,39 @@ Das Entwickeln einer PWA ist ansich ähnlich wie das einer Website, mit dem Unte
 
 ## Anwendungslogik
 ### Einleitung
-Folgt.
+Erwartungen:
+- APP sieht ungefähr so aus wie jetzt im "fertigen" Zustand
+- QR-Scanner liefert Ergebnis mit dem in JS gearbeitet werden kann
+- Funktionen sollen so einfach wie möglich und ohne große Umwege umgesetzt werden können, aber trotzdem sollen alle zu Beginn festgelegten Funktionen/Ziele erreicht werden
 
 ### Probleme
-**Problem:**  
-XYZ  
-**Lösung:**  
-123
+- Problem beim Festlegen des Projektrahmens
+  - Wie umfangreich soll die APP eigentlich sein?
+  - Reicht es, wenn der Prototyp kann, was festgelegt wurde?
+- Deployment ohne nodeJS APP
+  - Natives Javascript
+- QR-Scanner Library
+  - Realisierbar?
+- PWA Funktionalität/Caching
+  - Erster Kontakt mit Service-Workern
+- War das Erstellen einer "fake API" sinnvoll?
+  - Dient nur zur Demonstration
+- Javascript Hacks
+  - Globalisierung
+  - Initialisierung & Zugriff
+  - Redundante Code-Teile
+  - "Dynamic Cache" Hack
+- War die Entscheidung für unsere Navigation die richtige?
+  - Wären Seiten oder Inhaltserstellung mittels Vue.js besser gewesen?
+- Probleme bei der Implementierung von Libraries zur Bildvergrößerung durch die von uns gewählte Inhaltserstellung
+  - Wahl fällt auf Lightbox
+- Lokale Speicherung des Scanverlaufs mittels IndexedDB einfacher umgesetzt als erwartet
+
 
 ### Fazit
-Folgt.
+- Wurde das Ziel erreicht?
+  - Ja
+- Hätte man es besser machen können?
+  - Ja
+- Wurde bei dieser Arbeit dazugelernt?
+  - Ja
