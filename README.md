@@ -25,6 +25,12 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 ## Tutorial, Rundgang und Konfiguration des CDAA's
 ### Tutorial & Rundgang
 ### Kofiguration der PWA auf dem Smart-Device
+1. Öffnen des [Links](https://inf155.github.io/Cranach-PWA/demo/)
+2. Seitenmenu öffnen oder die am unteren Rand stehende Pop-Up Nachricht auswählen
+3. Zum Startbildschirm hinzufügen auswählen ![Zum Startbildschirm hinzufügen](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154313.png "Zum Startbildschirm hinzufügen")
+4. Bestätigen ![Zum Startbildschirm hinzufügen bestätigen](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154318.png "Zum Startbildschirm hinzufügen bestätigen")
+5. Auf dem Startbildschirm wechsel und PWA starten ![Zum Startbildschirm wechseln und starten](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154333.png "Zum Startbildschirm wechseln und starten")
+6. PWA Zugriff auf Kamera gewähren ![PWA Zugriff auf Kamera gewähren](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154921.png "PWA Zugriff auf Kamera gewähren")
 
 ## Projektverlauf - Probleme, Lösungen, Dirty Hacks 
 ### Design
