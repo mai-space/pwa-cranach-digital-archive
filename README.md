@@ -27,10 +27,10 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 ### Installationsanleitung der PWA auf dem Smart-Device
 1. Öffnen des [Links](https://inf155.github.io/Cranach-PWA/demo/)
 2. Seitenmenu öffnen oder die am unteren Rand stehende Pop-Up Nachricht auswählen
-3. Zum Startbildschirm hinzufügen auswählen ![Zum Startbildschirm hinzufügen](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154313.png "Zum Startbildschirm hinzufügen")
-4. Bestätigen ![Zum Startbildschirm hinzufügen bestätigen](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154318.png "Zum Startbildschirm hinzufügen bestätigen")
-5. Auf dem Startbildschirm wechsel und PWA starten ![Zum Startbildschirm wechseln und starten](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154333.png "Zum Startbildschirm wechseln und starten")
-6. PWA Zugriff auf Kamera gewähren ![PWA Zugriff auf Kamera gewähren](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154921.png "PWA Zugriff auf Kamera gewähren")
+3. Zum Startbildschirm hinzufügen auswählen <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154313.png" width="250px" alt="Zum Startbildschirm hinzufügen auswählen">
+4. Bestätigen <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154318.png" width="250px" alt="Bestätigen">
+5. Auf dem Startbildschirm wechsel und PWA starten <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154333.png" width="250px" alt="Auf dem Startbildschirm wechsel und PWA starten">
+6. PWA Zugriff auf Kamera gewähren <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154921.png" width="250px" alt="PWA Zugriff auf Kamera gewähren">
 
 ## Projektverlauf - Probleme, Lösungen, Dirty Hacks 
 ### Design
@@ -41,12 +41,12 @@ Da wir bereits im Wintersemester 2018/19 im Modul Screendesign das Thema 'Mobile
 - Im Feedbacktermin erhielten wir noch vereinzelt Vorschläge für den Durchschuss(Zeilenhöhe) sowie Schriftgröße.
 #### Mockups
 Zu Beginn der Designphase erstellten wir einfache Mockups um bereits die Funktionalität und den notwenigen Aufwand für das Entwickeln der PWA einzuschätzen. 
-1. ![Erstes Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Initial%20Idea.png "Erstes Mockup")
-2. ![Basic Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/More.jpg "Basic Mockup")
-3. ![Scan Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Scan.jpg "Scan Mockup")
-4. ![Zuletzt gescannt Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Zuletzt.jpg "Zuletzt gescannt Mockup")
-5. ![Galerie Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Galerie.jpg "Galerie Mockup")
-6. ![Extra Informationen Mockup](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Bild.jpg "Extra Informationen Mockup")
+1. <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Initial%20Idea.png" width="250px" alt="Erstes Mockup">
+2. <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/More.jpg" width="250px" alt="Basic Mockup">
+3. <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Scan.jpg" width="250px" alt="Scan Mockup">
+4.  <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Zuletzt.jpg" width="250px" alt="Zuletzt gescannt Mockup">
+5.  <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Galerie.jpg" width="250px" alt="Galerie Mockup">
+6.  <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Bild.jpg" width="250px" alt="Extra Informationen Mockup">
 #### Styleguide
 Basierend auf den Mockups entwickelten wir einen Styleguide für die Abstände, Schriftgröße und Farbpalette
 ##### Abstände
@@ -58,7 +58,7 @@ Basierend auf den Mockups entwickelten wir einen Styleguide für die Abstände, 
   - Desktop ```padding: 25%;```
 ##### Schriftgröße
 - Seitentitel ```font-size: 44px;```
-- Überschriften ```font-size: 24px;```
+- Überschriften ```font-size: 22px;```
 - Text ```font-size: 16px;```
 - Teasertexte ```font-size: 14px;```
 - Footer ```font-size: 10px;```
