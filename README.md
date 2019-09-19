@@ -6,9 +6,9 @@
 Praxisprojekt zum Vertiefungsmodul Web Development 2019 an der TH-Köln  
 
 ## Autoren des CDAA's
-- [Design](#design) von [Joel Mai](https://github.com/Inf166)
-- [Funktionalität](#anwendungslogik) von [Moritz Dahlke](https://github.com/inf155)
-- [Dokumentation](#tutorial--rundgang) von [Emre Inci](https://github.com/bamalamusic)
+- Design: [Joel Mai](https://github.com/Inf166)
+- Funktionalität: [Moritz Dahlke](https://github.com/inf155)
+- Dokumentation: [Emre Inci](https://github.com/bamalamusic)
 
 ## Projektbeschreibung
 ### Projektziel
@@ -47,8 +47,8 @@ Folgt.
 
 Weitere Informationen bezüglich des Projekts befinden sich im [Wiki](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki) des Projekts.
 
-## Projektverlauf und Reflexion
-In einer genauen [Reflexion](Dokumentation/Reflexion.md) des Projektverlaufs werden wesentliche Herausforderungen, wichtige Aspekte und interessante Implementierungsdetails vorgestellt.
+## Reflexion
+In einer genauen [Reflexion](Dokumentation/Reflexion.md) des Projektverlaufs werden wesentliche Herausforderungen/Probleme, sowie wichtige und interessante Erkenntnisse vorgestellt.
 
 ## Lizenz
 [MIT](https://github.com/Inf166/WDSS19-Praxisarbeit/blob/master/LICENSE)
