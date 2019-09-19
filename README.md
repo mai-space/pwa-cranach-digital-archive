@@ -44,9 +44,9 @@ Basierend auf den Mockups entwickelten wir einen [Styleguide](https://github.com
 ### Besondere Anmerkungen
 #### Frameworks
 - [fontawesome](https://fontawesome.com/v4.7.0/icons/)
-- [lightbox]()
-- [Jquery]()
-- [instascan]()
+- [lightbox](https://lokeshdhakar.com/projects/lightbox2/)
+- [Jquery](https://jquery.com/)
+- [instascan](https://github.com/schmich/instascan)
 
 ## Weitere Informationen
 Weitere Informationen bezüglich des Projekts im [WIKI](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki)
