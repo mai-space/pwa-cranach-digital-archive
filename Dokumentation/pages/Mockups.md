@@ -1,4 +1,3 @@
-#### Zurück zur [Mainpage](https://inf166.github.io/WDSS19-Praxisarbeit-CDAA/) 
 ## Mobilpage Mockups
 <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/Initial%20Idea.png" width="250px" alt="Erstes Mockup">
 <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Mockup/Mobile/More.jpg" width="250px" alt="Basic Mockup">

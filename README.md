@@ -25,7 +25,7 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 ## Tutorial, Rundgang und Installationsanleitung des CDAA's
 ### Tutorial & Rundgang
 ### Installationsanleitung der PWA auf dem Smart-Device
-Zur Anleitung mit Bildern den Link öffnen. [hier](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki/Installationsanleitung-der-PWA-auf-dem-Smart-Device)
+Zur Anleitung mit Bildern den Link öffnen. [hier](Dokumentation/pages/Installationsanleitung.md)
 1. Öffnen des [Links](https://inf155.github.io/Cranach-PWA/demo/)
 2. Seitenmenu öffnen oder die am unteren Rand stehende Pop-Up Nachricht auswählen
 3. Zum Startbildschirm hinzufügen auswählen 
@@ -41,10 +41,10 @@ Da wir bereits im Wintersemester 2018/19 im Modul Screendesign das Thema 'Mobile
 - Wir entwickelten ein Design das sowohl für den Desktop als auch Tablet und Smartphone gleichermaßen dargestellt werden kann und somit Verwirrung durch Variation und fehlende Konsistenz vermieden.
 - Im Feedbacktermin erhielten wir noch vereinzelt Vorschläge für den Durchschuss(Zeilenhöhe) sowie Schriftgröße.
 #### Mockups
-Zu Beginn der Designphase erstellten wir einfache [Mockups](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki/Mobilpage-Mockups) um bereits die Funktionalität und den notwenigen Aufwand für das Entwickeln der PWA einzuschätzen. 
+Zu Beginn der Designphase erstellten wir einfache [Mockups](Dokumentation/pages/Mockups.md) um bereits die Funktionalität und den notwenigen Aufwand für das Entwickeln der PWA einzuschätzen. 
 
 #### Styleguide
-Basierend auf den Mockups entwickelten wir einen [Styleguide](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki/Styleguide) für die Abstände, Schriftgröße und Farbpalette.
+Basierend auf den Mockups entwickelten wir einen [Styleguide](Dokumentation/pages/Styleguide.md) für die Abstände, Schriftgröße und Farbpalette.
 
 #### Hard Coden mit purem CSS
 Natürlich hätte man das ganze Design in Sass schreiben können und dann in CSS kompilieren, aber wir empfunden das schreiben in CSS als absolut ausreichend für ein Projekt dieses Umfangs.

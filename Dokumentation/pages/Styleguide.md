@@ -1,4 +1,3 @@
-#### Zurück zur [Mainpage](https://inf166.github.io/WDSS19-Praxisarbeit-CDAA/) 
 ## Styleguide
 
 ##### Abstände
