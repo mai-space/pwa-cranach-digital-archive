@@ -32,6 +32,18 @@ function createGalleryPainting(painting) {
 const historyContainer = document.querySelector('#historyContent');
 var scanHistory = new Array();
 
+function setHistory(history) {
+    scanHistory = history;
+    updateHistory();
+}
+
+function saveHistory(imgID) {
+    scanHistory.push(imgID);
+    if (window.indexedDB) {
+        saveScanID(imgID);
+    }
+}
+
 function updateHistory() {
     historyContainer.innerHTML = '';
     if (scanHistory.length > 0) {
