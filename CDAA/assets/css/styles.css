@@ -95,13 +95,18 @@ body {
 
 	/* QR-SCAN STYLING */
 	#scan {
+		position: relative;
 		overflow: hidden;
 		padding: 0;
+		min-height: 100vh;
+		min-width: 100vh;
 	}
 
 	#qr-camera {
-		left: -9999px;
-		right: -9999px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		width: 100%;
 		height: 100%;
 	}
