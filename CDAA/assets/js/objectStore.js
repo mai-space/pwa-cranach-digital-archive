@@ -42,7 +42,6 @@ function loadScanIDs() {
     request.onsuccess = function(e) {
         var cursor = e.target.result;
         if (cursor) {
-            //console.log(`[ObjectStore] Got Data! Key: ${cursor.key} Value: ${cursor.value}`);
             savedScanIDs.push(cursor.value);
             cursor.continue();
         } else {
