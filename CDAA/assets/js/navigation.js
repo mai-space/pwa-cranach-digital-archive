@@ -106,7 +106,7 @@ $(document).ready(function() {
                 entries[i].style.display = 'block';
             } else {
                 var title = entries[i].childNodes[3].childNodes[1].innerHTML.toLowerCase();
-                if (!title.startsWith(search)) {
+                if (!title.includes(search)) {
                     entries[i].style.display = 'none';
                 } else {
                     entries[i].style.display = 'block';
