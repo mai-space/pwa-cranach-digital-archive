@@ -50,6 +50,19 @@ function loadScanIDs() {
     }   
 }
 
+function deleteLocalHistory() {
+    var TX = DB.transaction(DB_HistoryStore, 'readwrite');
+    TX.onerror = function(e) {
+        console.error(`[ObjectStore] (Transaction) DB-Error: ${e.target.error}`);
+    };
+    var historyStore = TX.objectStore(DB_HistoryStore);
+    var request = historyStore.clear();
+    request.onsuccess = function(e) {
+        alert('Scanverlauf erfolgreich gelöscht.');
+        clearHistory();
+    }
+}
+
 if (!window.indexedDB) {
     console.error('[ObjectStore] IndexedDB is NOT supported.');
 } else {
