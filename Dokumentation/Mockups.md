@@ -1,4 +1,4 @@
-## Mockups für die mobile Seitenansicht
+# Mockups für die mobile Seitenansicht
 <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Images/Mockup/Mobile/Initial%20Idea.png" width="250px" alt="Erstes Mockup">
 <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Images/Mockup/Mobile/More.jpg" width="250px" alt="Basic Mockup">
 <img src="https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/Images/Mockup/Mobile/Scan.jpg" width="250px" alt="Scan Mockup">
