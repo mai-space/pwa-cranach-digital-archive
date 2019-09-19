@@ -8,7 +8,7 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019 an der TH-Köln
 ## Autoren des CDAA's
 - [Design](#design) von [Joel Mai](https://github.com/Inf166)
 - [Funktionalität](#anwendungslogik) von [Moritz Dahlke](https://github.com/inf155)
-- [Dokumentation](#tutorial-rundgang-und-konfiguration-des-cdaas) von [Emre Inci](https://github.com/bamalamusic)
+- [Dokumentation](#tutorial--rundgang) von [Emre Inci](https://github.com/bamalamusic)
 
 ## Kontext des CDAA's
 ### Was ist das CDAA?
@@ -22,9 +22,9 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 
 ## Aktueller Stand des CDAA's
 
-## Tutorial, Rundgang und Konfiguration des CDAA's
+## Tutorial, Rundgang und Installationsanleitung des CDAA's
 ### Tutorial & Rundgang
-### Kofiguration der PWA auf dem Smart-Device
+### Installationsanleitung der PWA auf dem Smart-Device
 1. Öffnen des [Links](https://inf155.github.io/Cranach-PWA/demo/)
 2. Seitenmenu öffnen oder die am unteren Rand stehende Pop-Up Nachricht auswählen
 3. Zum Startbildschirm hinzufügen auswählen ![Zum Startbildschirm hinzufügen](https://raw.githubusercontent.com/Inf166/WDSS19-Praxisarbeit-CDAA/master/Dokumentation/TutorialScreenshots/Konfiguration_20190919-154313.png "Zum Startbildschirm hinzufügen")
@@ -77,6 +77,11 @@ Basierend auf den Mockups entwickelten wir einen Styleguide für die Abstände, 
 - Für das Tablet & Desktop ```grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));```
 ### Anwendungslogik
 ### Besondere Anmerkungen
+#### Frameworks
+- [fontawesome](https://fontawesome.com/v4.7.0/icons/)
+- [lightbox]()
+- [Jquery]()
+- [instascan]()
 
 ## Weitere Informationen
 Weitere Informationen bezüglich des Projekts im [WIKI](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki)
