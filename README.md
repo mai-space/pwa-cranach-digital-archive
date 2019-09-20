@@ -23,8 +23,9 @@ Da es sich um eine PWA handelt ist es möglich, Website-Daten und Weiteres in de
 
 Die Projektart des CDAA lässt sich nicht ganz so leicht auf ``Deep Dive`` oder ``Multiperspective`` eingrenzen, da keiner der beiden Ansätze zu 100% zutreffend ist. In erster Linie findet ein **Deep Dive** im Bereich ``Frameworks``, sowie im Bereich ``Frontend Development`` statt, was sich durchaus auch als Multiperspective definieren lässt.
 
-### Aktueller Entwicklungsstand des CDAA
-Folgt.
+### Funktionsweise des CDAA
+Die Funktionsweise des CDAA ist sehr einfach. Im Prinzip besteht die Anwendung aus einer Website, die mittels nativem Javascript Service-Worker zu einer PWA umfunktioniert wurde,  somit auf einem Smart-Device wie eine App installiert werden kann und dadurch auch offline verfügbar ist. Durch eine selbst-ernannte "fake API" werden Bilder und Bildinformationen abgerufen und gecached. Ein eingebundener QR-Scanner akzeptiert bestimmte QR-Codes und mittels JS wird der Seiteninhalt aktualisiert und angezeigt. Der Scanverlauf wird lokal auf dem Gerät gespeichert und kann vom Benutzer manuell gelöscht werden. Dies funktioniert über die native, browser-übergreifende IndexedDB.
+
 
 ## Installation, Tutorial & Rundgang
 ### Installation der PWA auf einem Smart-Device
@@ -47,7 +48,7 @@ Folgt.
 
 Weitere Informationen bezüglich des Projekts befinden sich im [Wiki](https://github.com/Inf166/WDSS19-Praxisarbeit-CDAA/wiki) des Projekts.
 
-## Reflexion
+## Reflexion/Auswertung nach Abschluss des Projekts
 In einer genauen [Reflexion](Dokumentation/Reflexion.md) des Projektverlaufs werden wesentliche Herausforderungen/Probleme, sowie wichtige und interessante Erkenntnisse die aus der Projektarbeit hervorgingen vorgestellt und zusammengefasst.
 
 ## Lizenz
