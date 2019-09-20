@@ -64,39 +64,30 @@ In diesem Praxisprojekt lernten wir viel über die wichtigen Details der Front-E
 
 ## Anwendungslogik
 ### Einleitung
-Erwartungen:
-- APP sieht ungefähr so aus wie jetzt im "fertigen" Zustand
-- QR-Scanner liefert Ergebnis mit dem in JS gearbeitet werden kann
-- Funktionen sollen so einfach wie möglich und ohne große Umwege umgesetzt werden können, aber trotzdem sollen alle zu Beginn festgelegten Funktionen/Ziele erreicht werden
+Nachdem wir uns darauf geeinigt hatten, dass wir mittels QR-Scanner zusätzliche Bildinformationen auf einer Website wiedergeben wollen, war schnell klar, dass wir versuchen würden, eine PWA mit integriertem QR-Scanner zu entwickeln, da die Verwendung eines geräte-spezifischen QR-Scanners und das sich ständig wiederholende Aufrufen und Schließen einer Website äußerst lästig sein würde. Die Erwartungen für die Anwendung waren erst einmal, dass diese ungefähr so aussieht, wie sie es auch jetzt im abgeschlossenen Zustand tut und dass der QR-Scanner, falls ein solcher überhaupt umgesetzt werden kann, ein Ergebnis liefert mit dem man relativ einfach arbeiten kann. Die Funktionen der Anwendung sollten so einfach wie möglich und ohne große Umwege umgesetzt werden, wobei trotzdem alle zu Beginn festgelegten Funktionen/Ziele erreicht werden sollten.  
 
-### Probleme
-- Problem beim Festlegen des Projektrahmens
-  - Wie umfangreich soll die APP eigentlich sein?
-  - Reicht es, wenn der Prototyp kann, was festgelegt wurde?
-- Deployment ohne nodeJS APP
-  - Natives Javascript
-- QR-Scanner Library
-  - Realisierbar?
-- PWA Funktionalität/Caching
-  - Erster Kontakt mit Service-Workern
-- War das Erstellen einer "fake API" sinnvoll?
-  - Dient nur zur Demonstration
-- Javascript Hacks
-  - Globalisierung
-  - Initialisierung & Zugriff
-  - Redundante Code-Teile
-  - "Dynamic Cache" Hack
-- War die Entscheidung für unsere Navigation die richtige?
-  - Wären Seiten oder Inhaltserstellung mittels Vue.js besser gewesen?
-- Probleme bei der Implementierung von Libraries zur Bildvergrößerung durch die von uns gewählte Inhaltserstellung
-  - Wahl fällt auf Lightbox
-- Lokale Speicherung des Scanverlaufs mittels IndexedDB einfacher umgesetzt als erwartet
+Zu Beginn der Arbeit stellten sich uns die zwei folgende Fragen:  
+*Ist der QR-Scanner realisierbar?*  
+*Sind wir in der Lage, die Website als PWA umzusetzen?*
 
+Um diese Fragen zu klären fanden vorerst zwei seperate Tests statt. Jeder dieser Tests beantwortete jeweils eine Frage. Zum einen wurde nach einer (möglichst einfachen) Möglichkeit gesucht, einen QR-Scanner auf der Website zu integrieren und mit dessen Ergebnis eine Grundvorraussetzung für das Projekt zu schaffen. Als nächstes wurde eine provisorische Website angelegt, die ohne zusätzliche Libraries, also mit nativen Mitteln, zu einer (sehr inkonsestenten) PWA umfunktioniert wurde.  
+
+Nachdem diese beiden Fragen geklärt waren und beide Funktionen realisierbar erschienen gab es im Hinblick auf die restliche Arbeit wenig Bedenken und es stand fest, dass wir zum Ende des Projekts ein Ergebnis liefern können, ganz egal wie qualitativ hochwertig dies sein würde.
+
+### Probleme & Rückblick
+Während der Entwicklung der Anwendung kamen zwischenzeitlich immer wieder Fragen auf, die zwar keine wirklichen Probleme hervorriefen, aber durchaus kurzzeitig zum Nachdenken anregten.
+
+Anfangs kam die Frage nach der Definition des Projektrahmens auf. Wie umfangreich sollte die Anwendung eigentlich werden und wie ausgereift sollte der Prototyp sein? Diese Frage konnte über die gesamte Arbeitszeit nie wirklich beantwortet werden, aber das Ergebnis ist zufriedenstellend.
+
+Die Entscheidung, die Anwendung so einfach wie möglich zu gestalten, keine nodeJS Applikation daraus zu machen und lediglich natives Javascript zu verwenden vereinfachte die Arbeit ungemein, warf allerdings auch Fragen im Bezug auf den QR-Scanner, die PWA-Funktionalität und die Inhaltsgestaltung auf. Letztere bezieht sich auf die Frage ob die Entscheidung für unsere Art der Navigation die richtige gewesen ist, oder Seiten/Inhaltserstellung mittels Vue.js oder anderen Frameworks sinnvoller gewesen wäre, da die Inhaltsgestaltung und Navigation nun eher unkonventionell umgesetzt wurde. Beispielsweise gibt es nur eine HTML-Seite, dessen Inhalt aktualisiert und ein- bzw. ausgeblendet wird.
+
+Rückblickend fällt die Nutzung vieler solcher "Dirty Hacks" in der Anwendung auf. Ein Beispiel dafür ist der Geltungsbereich von Javascript Code (Globale Variablen, etc.), was zu verschiedenen Problemen im Hinblick auf Initialisierung und Zugriff führen kann, wodurch bspw. eine bestimmte Include-Reihenfolge erforderlich ist. Ein anderes Beispiel ist Code-Redundanz. Bei der "Seiten"-Navigation wird bspw. Javascript-Code für DOM-Elemente ausgeführt um Eigenschaften festzulegen, die diese bereits besitzen, da die Anwendung keine Information über den Origin, also die vorherige Seite speichert.  
+
+Eine ganz andere und wichtige Frage stellte sich erst gegen Ende des Projekts. Es war die Frage, ob das Erstellen der "fake API" sinnvoll war. Die "fake API" dient lediglich zur Demonstration dafür, dass Bilder und Bildinformationen online abgerufen werden können und nicht lokal gespeichert sein müssen. Um alternativen Bildansichten vom Caching auszuschliessen wurde einfach alles von der API mittels RegExp ausgeschlossen, was nicht gecached werden sollte, anstatt dies irgendwie dynamisch zu lösen, da Third-Party Scripts trotzdem gecached werden sollten.  
+
+Bei der Implementierung dieser Third-Party Scripts gab es generell keine Probleme, allerdings trat eines bei der Findung einer Library zur Bildvergrößerung auf, denn dies wurde durch das bereits bestehendes System stark eingeschränkt, da alle Bilder dynamisch in das HTML eingepflegt werden und viele Libraries so nicht genutzt werden konnten. Die Wahl viel also auf eine Library (Lightbox v2), die in das System eingebaut werden konnte, wodurch die Zoomfunktion (vorerst) eingebüßt werden musste, da diese nicht im Funktionsumfang enthalten ist. Eine spätere Version der Library, welche sich in Entwicklung befindet, wird diese Funktion zwar beinhalten, aber so lange sind die Funktionen des Systems limitiert.
+
+Als im Nachhinein vorgeschlagen wurde, den Scanverlauf lokal zu speichern und löschbar zu machen, konnte dies überraschend schnell und einfach umgesetzt werden, auch wenn es der erste Kontakt mit der IndexedDB war.
 
 ### Fazit
-- Wurde das Ziel erreicht?
-  - Ja
-- Hätte man es besser machen können?
-  - Ja
-- Wurde bei dieser Arbeit dazugelernt?
-  - Ja
+Abschließend kann man festhalten, dass das Ziel des Projekts auf jeden Fall erreicht wurde und ein Ergebnis zustande kam, welches durchaus vorzeigbar ist, auch wenn viele Bereiche eventuell nicht ganz produktionsfähig sind. Es gibt mit Sicherheit viele Aspekte, die man hätte besser/eleganter lösen können oder die bereits einen gewissen Lösungsstandard besitzen. Da man sich bei solch einer Arbeit stets in einem Lernprozess befindet, ist dies absolut vertretbar.
