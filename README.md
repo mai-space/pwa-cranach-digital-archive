@@ -38,9 +38,11 @@ Die Funktionsweise des CDAA ist sehr einfach. Im Prinzip besteht die Anwendung a
 Zur Anleitung mit Bildern [hier](Dokumentation/Installation.md) klicken.
 
 ### Tutorial & Rundgang
-Nach der erfolgreichen Installation landet man auf der Seite mit dem Aktiven QR Scanner. Von hier aus ist man in der Lage einen QR-Code zu scannen um direkt Informationen zum Bild zu erhalten. Wenn man seine Aufmerksamkeit auf den Unteren Bereich des Bildschirms lenkt, sieht man einen Indikator auf welcher Seite man sich befindet.
+Nach der erfolgreichen Installation landet man auf der Seite mit dem Aktiven QR Scanner. Von hier aus ist man in der Lage einen QR-Code zu scannen um direkt Informationen zum Bild zu erhalten. Wenn man seine Aufmerksamkeit auf den Unteren Bereich des Bildschirms lenkt, sieht man einen Indikator auf welcher Seite man sich befindet.  
+
 Der 2te Button bringt einen zum Scanverlauf, wo man in der Lage ist die alten Bilder schnell und bequem wieder aufzurufen.
 Der 3te Button von links ist die gesamte Bilder Galerie, in der jeder Eintrag gespeichert ist. Von hier ist es ebenfalls möglich, Bilder aufzurufen. Wenn dies gemacht wird, wird man auf die entsprechende Seite mit den jeweiligen Bildinformationen gebracht. Hier hat man die Möglichkeit Beschreibung, Maße und Bildträger angezeigt zu bekommen. Des weiteren ist es möglich sich weitere Versionen dieses Bildes anzusehen, wie z. B. Schwarz-Weiß, indem man unter dem Titel des Bildes auf "Mehr Bilder" klickt.
+
 Mit dem Pfeil in der oberen Linken Ecke gelangt man dann wieder zur Bildinformation und um auf die Galerie wieder zu gelangen kann man einfach den Galerie-Button wieder anklicken. Die 3 Punkte welche den letzten Button ausmachen führen einen zu einer Seite, auf der man den Scanverlauf löschen kann und zugriff auf das Repository und die Dokumentation findet.
 
 ### Verwendete Frameworks & Libraries
