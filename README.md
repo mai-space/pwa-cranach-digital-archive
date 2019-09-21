@@ -37,13 +37,18 @@ Die Funktionsweise des CDAA ist sehr einfach. Im Prinzip besteht die Anwendung a
 
 Zur Anleitung mit Bildern [hier](Dokumentation/Installation.md) klicken.
 
-### Tutorial & Rundgang
-Nach der erfolgreichen Installation landet man auf der Seite mit dem Aktiven QR Scanner. Von hier aus ist man in der Lage einen QR-Code zu scannen um direkt Informationen zum Bild zu erhalten. Wenn man seine Aufmerksamkeit auf den Unteren Bereich des Bildschirms lenkt, sieht man einen Indikator auf welcher Seite man sich befindet.  
+### Anwendung
+Nach Start der Anwendung erhält der Nutzer die Möglichkeit, mittels QR-Scanner einen jedem Gemälde beiliegenden QR-Code einzuscannen. Dadurch gelangt er auf eine Informationsseite zum jeweiligen Gemälde. Auf dieser Seite findet er zusätzliche Bildinformationen wie bspw. eine Beschreibung oder Daten über Bildmaße. Außerdem ist der Nutzer in der Lage, über den sich unter dem Vorschaubild  befindenden Link "Mehr Bilder", eine Übersicht mit alternativen Bildansichten wie z.B. schwarz-weiß Versionen oder Infrarotabzüge anzeigen zu lassen.  
 
-Der 2te Button bringt einen zum Scanverlauf, wo man in der Lage ist die alten Bilder schnell und bequem wieder aufzurufen.
-Der 3te Button von links ist die gesamte Bilder Galerie, in der jeder Eintrag gespeichert ist. Von hier ist es ebenfalls möglich, Bilder aufzurufen. Wenn dies gemacht wird, wird man auf die entsprechende Seite mit den jeweiligen Bildinformationen gebracht. Hier hat man die Möglichkeit Beschreibung, Maße und Bildträger angezeigt zu bekommen. Des weiteren ist es möglich sich weitere Versionen dieses Bildes anzusehen, wie z. B. Schwarz-Weiß, indem man unter dem Titel des Bildes auf "Mehr Bilder" klickt.
+Am unteren Bildschirmrand befindet sich zu jedem Zeitpunkt eine Navigationsleiste, über die der Nutzer vier wesentliche Seiten ansteuern kann. Der Indikator für die aktuelle Seite ist hierbei optisch hervorgehoben.  
 
-Mit dem Pfeil in der oberen Linken Ecke gelangt man dann wieder zur Bildinformation und um auf die Galerie wieder zu gelangen kann man einfach den Galerie-Button wieder anklicken. Die 3 Punkte welche den letzten Button ausmachen führen einen zu einer Seite, auf der man den Scanverlauf löschen kann und zugriff auf das Repository und die Dokumentation findet.
+Der erste Navigationspunkt blendet den QR-Scanner für weitere QR-Scans ein.  
+
+Über den zweiten Navigationspunkt kann sich der Nutzer seinen Scanverlauf anzeigen lassen, welcher alle zuvor abgerufenen Gemälde in absteigender Reihenfolge beinhaltet. So kann der Nutzer selbst wenn er sich bereits physisch vom Gemälde entfernt hat noch einmal auf die dazugehörigen Informationen zugreifen, um z.B. auseinanderliegende Gemälde miteinander zu vergleichen. Dafür kann der Nutzer das jeweilige Bild einfach antippen.  
+
+Ein dritter Menüpunkt steuert eine Galerie an, welche jedes Gemälde in der aktuellen Ausstellung beinhaltet. In dieser Galerie kann der Nutzer Gemälde über ihren Namen suchen und finden. Auch hier lässt sich der jeweilige Eintrag antippen, um auf die Bildinformationen zuzugreifen.  
+
+Der vierte und letzte Menüpunkt zeigt dem Nutzer eine Handvoll an nützlichen, projektbezogenen Links an und bietet dem Nutzer außerdem die Möglichkeit, seinen Scanverlauf zu löschen, um bspw. eine neue Ausstellungstour zu initiieren.  
 
 ### Verwendete Frameworks & Libraries
 - [jQuery](https://jquery.com/)
