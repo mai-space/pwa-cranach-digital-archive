@@ -7,7 +7,7 @@ Praxisprojekt zum Vertiefungsmodul Web Development 2019 an der TH-Köln
 
 ## Autoren des CDAA's
 - Design: [Joel Mai](https://github.com/Inf166)
-- Funktionalität: [Moritz Dahlke](https://github.com/inf155)
+- Funktionalität: [Moritz Dahlke](https://github.com/iceq1337)
 - Dokumentation: [Emre Inci](https://github.com/bamalamusic)
 
 ## Projektbeschreibung
@@ -29,7 +29,7 @@ Die Funktionsweise des CDAA ist sehr einfach. Im Prinzip besteht die Anwendung a
 
 ## Installation, Tutorial & Rundgang
 ### Installation der PWA auf einem Smart-Device
-1. Öffnen der [Demo](https://inf155.github.io/Cranach-PWA/demo/), welche sich in einem seperaten Repository befindet.
+1. Öffnen der [Demo](https://iceq1337.github.io/CDAA-PWA-Demo/demo/), welche sich in einem seperaten Repository befindet.
 2. Browsermenü öffnen oder, falls vorhanden, die am unteren Rand erscheinende Pop-Up Nachricht auswählen.
 3. Anwendung zum Startbildschirm hinzufügen.
 4. Auf den Startbildschirm wechseln und Anwendung starten.
