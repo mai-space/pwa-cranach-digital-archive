@@ -29,7 +29,7 @@ Die Funktionsweise des CDAA ist sehr einfach. Im Prinzip besteht die Anwendung a
 
 ## Installation, Tutorial & Rundgang
 ### Installation der PWA auf einem Smart-Device
-1. Öffnen der [Demo](https://iceq1337.github.io/Cranach-PWA/demo/), welche sich in einem seperaten Repository befindet.
+1. Öffnen der [Demo](https://iceq1337.github.io/CDAA-PWA-Demo/demo/), welche sich in einem seperaten Repository befindet.
 2. Browsermenü öffnen oder, falls vorhanden, die am unteren Rand erscheinende Pop-Up Nachricht auswählen.
 3. Anwendung zum Startbildschirm hinzufügen.
 4. Auf den Startbildschirm wechseln und Anwendung starten.
